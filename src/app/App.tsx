@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import "./styles/global.scss";
+import "@shared/styles/global.scss";
 
 import HomePage from "../pages/HomePage";
 

@@ -1,12 +1,20 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        "custom-white": "hsla(0, 0%, 95%, 1);",
-        "custom-black": "hsla(0, 0%, 20%, 1)",
-        "custom-orange": "hsla(24, 100%, 50%, 1)",
+        primary: {
+          darken: "#1A262B",
+          "red-text": " #D25127",
+          "white-text": "#FFFFFF",
+        },
+        indicators: {
+          "light-dark-text": "#223137",
+          "gradient-yellow": "#FCBF20",
+        },
+        button: {
+          "bg-button": "#F38810",
+        },
       },
     },
   },

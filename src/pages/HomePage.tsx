@@ -1,7 +1,12 @@
 import React from "react";
+import MainScreen from "@widgets/Main";
 
 const HomePage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <MainScreen />
+    </div>
+  );
 };
 
 export default HomePage;
