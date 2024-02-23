@@ -1,0 +1,23 @@
+.red-sep {
+  width: 10px;
+  height: 2px;
+  background: #d25127;
+}
+
+.dark-red {
+  width: clamp(76px, 7.9161600000000005vw, 304px);
+  height: clamp(1px, 0.10416vw, 4px);
+  background: #a63222;
+}
+
+.yellow {
+  width: clamp(76px, 7.9161600000000005vw, 304px);
+  height: clamp(1px, 0.10416vw, 4px);
+  background: yellow;
+}
+
+.orange {
+  width: clamp(76px, 7.9161600000000005vw, 304px);
+  height: clamp(1px, 0.10416vw, 4px);
+  background: #f38810;
+}

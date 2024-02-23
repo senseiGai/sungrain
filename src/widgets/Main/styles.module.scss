@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__content {
+    width: 90%;
+  }
+  &__content_logo {
+    @apply mt-16;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+}

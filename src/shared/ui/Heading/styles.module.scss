@@ -1,0 +1,23 @@
+%heading-common {
+  font-weight: 800;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.heading--primary {
+  @extend %heading-common;
+  @apply text-primary-red-text;
+  font-size: 60px;
+}
+
+.heading--secondary {
+  @extend %heading-common;
+  @apply text-white;
+  font-size: 60px;
+}
+
+.heading--secondary--small {
+  @extend %heading-common;
+  @apply text-white;
+  font-size: 35px;
+}

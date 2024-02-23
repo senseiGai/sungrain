@@ -3,8 +3,6 @@ import { LinkText } from "@shared/ui/LinkText";
 
 import styles from "../Header/styles.module.scss";
 
-// import Logo from "@assets/logo.svg";
-
 function Header() {
   return (
     <header className={styles.header}>
