@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  margin-top: 69.31px;
+  margin-top: clamp(34.655px, 3.6096648vw, 138.62px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,8 +10,14 @@
   &___content {
     width: 90%;
   }
-  &__text_section {
+  &__text {
     @apply mt-12;
     text-align: center;
+
+    &_paragraph {
+      @apply mt-4;
+      @apply ml-2;
+      width: clamp(220.5px, 22.96728vw, 882px);
+    }
   }
 }

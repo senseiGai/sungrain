@@ -1,18 +1,15 @@
 .paragraph--default {
-  width: 441px;
-  height: 203px;
   color: white;
-  font-size: 18px;
+  font-size: clamp(9px, 0.93744vw, 36px);
   font-weight: 400;
-  line-height: 29.2px;
-  word-wrap: break-word;
+  line-height: clamp(14.6px, 1.520736vw, 58.4px);
 }
 
 .paragraph--card {
   text-align: left;
   color: white;
-  font-size: 20px;
+  font-size: clamp(10px, 1.0416vw, 40px);
   font-weight: 400;
-  line-height: 32.44px;
+  line-height: clamp(16.22px, 1.6894752vw, 64.88px);
   word-wrap: break-word;
 }
