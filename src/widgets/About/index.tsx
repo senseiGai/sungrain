@@ -30,6 +30,7 @@ function AboutScreen() {
             />
           </section>
         </section>
+        <section className={styles.about__flower_cards}></section>
       </div>
     </section>
   );
