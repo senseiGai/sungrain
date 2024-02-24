@@ -20,4 +20,41 @@
       width: clamp(220.5px, 22.96728vw, 882px);
     }
   }
+
+  &__flower_cards {
+    @apply mt-32;
+    display: flex;
+    flex-direction: row;
+    height: clamp(394px, 41.03904vw, 1576px);
+    background: rgba(26, 38, 43, 0.6);
+  }
+  &__flower_card:nth-child(1) {
+    background-image: url(../../assets/Cards/sunwbp.webp);
+    width: clamp(203.5px, 21.19656vw, 814px);
+    background-position-x: 40%;
+    background-size: 90%;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+  }
+  &__flower_card:nth-child(2) {
+    background-image: url(../../assets/);
+    width: clamp(203.5px, 21.19656vw, 814px);
+  }
+  &__flower_card:nth-child(3) {
+    background-image: url(../../assets/);
+    width: clamp(203.5px, 21.19656vw, 814px);
+  }
+  &__card_text_section {
+    @apply mt-6;
+    @apply ml-6;
+  }
+  &__card_text {
+    @apply mt-1;
+    color: white;
+    font-size: clamp(16px, 1.66656vw, 64px);
+    font-weight: 400;
+    word-wrap: break-word;
+  }
 }

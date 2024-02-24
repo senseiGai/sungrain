@@ -1,25 +1,31 @@
 .separator--red {
-  width: 467px;
-  height: 2px;
+  width: clamp(233.5px, 24.321360000000002vw, 934px);
+  height: clamp(1px, 0.10416vw, 4px);
   background-color: #d25127;
   border: none;
   outline: none;
 }
 
 .separator--dark-red {
-  width: clamp(76px, 7.9161600000000005vw, 304px);
+  width: clamp(135.5px, 14.11368vw, 542px);
   height: clamp(1px, 0.10416vw, 4px);
   background: #a63222;
+  border: none;
+  outline: none;
 }
 
 .separator--yellow {
-  width: clamp(76px, 7.9161600000000005vw, 304px);
+  width: clamp(135.5px, 14.11368vw, 542px);
   height: clamp(1px, 0.10416vw, 4px);
   background: yellow;
+  border: none;
+  outline: none;
 }
 
 .separator--orange {
-  width: clamp(76px, 7.9161600000000005vw, 304px);
+  width: clamp(135.5px, 14.11368vw, 542px);
   height: clamp(1px, 0.10416vw, 4px);
   background: #f38810;
+  border: none;
+  outline: none;
 }

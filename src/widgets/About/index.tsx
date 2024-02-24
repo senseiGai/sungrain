@@ -30,8 +30,30 @@ function AboutScreen() {
             />
           </section>
         </section>
-        <section className={styles.about__flower_cards}></section>
       </div>
+      <section className={styles.about__flower_cards}>
+        <div className={styles.about__flower_card}>
+          <section className={styles.about__card_text_section}>
+            <p className={styles.about__card_text}>МУКА</p>
+            <p className={styles.about__card_text}>для лепки</p>
+            <Separator separatorType="dark-red" margin="mt-4" />
+          </section>
+        </div>
+        <div className={styles.about__flower_card}>
+          <section className={styles.about__card_text_section}>
+            <p className={styles.about__card_text}>МУКА</p>
+            <p className={styles.about__card_text}>для пиццы</p>
+            <Separator separatorType="yellow" margin="mt-4" />
+          </section>
+        </div>
+        <div className={styles.about__flower_card}>
+          <section className={styles.about__card_text_section}>
+            <p className={styles.about__card_text}>МУКА</p>
+            <p className={styles.about__card_text}>для выпечки</p>
+            <Separator separatorType="orange" margin="mt-4" />
+          </section>
+        </div>
+      </section>
     </section>
   );
 }
