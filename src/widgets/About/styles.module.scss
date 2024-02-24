@@ -7,8 +7,12 @@
   align-items: center;
   background-color: #1a262b;
 
-  &___content {
+  &__content {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__text {
     @apply mt-12;
@@ -16,8 +20,10 @@
 
     &_paragraph {
       @apply mt-4;
-      @apply ml-2;
+      // @apply ml-2;
+      text-align: center;
       width: clamp(220.5px, 22.96728vw, 882px);
+      height: clamp(101.5px, 10.57224vw, 406px);
     }
   }
 

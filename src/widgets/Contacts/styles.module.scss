@@ -1,0 +1,28 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a262b;
+
+  &__content {
+    width: 90%;
+    @apply mt-32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    @apply mt-12;
+    text-align: center;
+
+    &_paragraph {
+      @apply mt-8;
+      text-align: center;
+      width: clamp(255px, 26.5608vw, 1020px);
+      height: clamp(47.5px, 4.9476vw, 190px);
+    }
+  }
+}

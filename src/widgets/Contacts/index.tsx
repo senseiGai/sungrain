@@ -9,16 +9,16 @@ import styles from "../Contacts/styles.module.scss";
 function Contacts() {
   return (
     <section className={styles.contacts}>
-      <div className={styles.contacts__content} id="contact">
-        <section className={styles.about__text}>
-          <Heading text="Контакты" headingType="primary" />
-          <Separator separatorType="red" />
-          {/* <section className={styles.about__text_paragraph}> */}
-          <Paragraph
-            paragraphType="default"
-            text="С собственным производством и отлаженной логистикой, мы способны оперативно удовлетворять запросы наших клиентов."
-          />
-          {/* </section> */}
+      <div className={styles.contacts__content} id="contacts">
+        <section className={styles.contacts__text}>
+          <Heading text="Контакты" headingType="primary" margin="mb-3" />
+          <Separator separatorType="red" margin="ml-6" />
+          <section className={styles.contacts__text_paragraph}>
+            <Paragraph
+              paragraphType="default"
+              text="С собственным производством и отлаженной логистикой, мы способны оперативно удовлетворять запросы наших клиентов."
+            />
+          </section>
         </section>
       </div>
     </section>

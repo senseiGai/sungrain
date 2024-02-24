@@ -12,7 +12,7 @@ function AboutScreen() {
       <div className={styles.about__content} id="about">
         <section className={styles.about__text}>
           <Heading text="О компании" headingType="primary" />
-          <Separator separatorType="red" />
+          <Separator separatorType="red" margin="mt-3" />
           <Heading
             text="ТОО “Sun grain”"
             headingType="secondary--small"
