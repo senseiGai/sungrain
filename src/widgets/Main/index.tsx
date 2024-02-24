@@ -4,7 +4,7 @@ import Header from "@features/Header";
 
 import styles from "../Main/styles.module.scss";
 
-import Logo from "@assets/logo.svg";
+import Logo from "@assets/Logo/logo.svg";
 
 function MainScreen() {
   return (

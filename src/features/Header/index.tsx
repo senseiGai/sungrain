@@ -8,9 +8,9 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.header__content}>
         <nav className={styles.header__content_links}>
-          <LinkText to="#" text="О компании" />
-          <LinkText to="#" text="Наша продукция" />
-          <LinkText to="#" text="Связаться с нами" />
+          <LinkText to="about" text="О компании" />
+          <LinkText to="products" text="Наша продукция" />
+          <LinkText to="contacts" text="Связаться с нами" />
         </nav>
       </div>
     </header>

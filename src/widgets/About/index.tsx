@@ -9,7 +9,7 @@ import styles from "../About/styles.module.scss";
 function AboutScreen() {
   return (
     <section className={styles.about}>
-      <div className={styles.about__content}>
+      <div className={styles.about__content} id="about">
         <section className={styles.about__text}>
           <Heading text="О компании" headingType="primary" />
           <Separator separatorType="red" />
@@ -25,8 +25,7 @@ function AboutScreen() {
             />
             <Paragraph
               paragraphType="default"
-              text="Наши специалисты постоянно отслеживают все этапы производства, чтобы обеспечить вам лучший выбор.
-"
+              text="Наши специалисты постоянно отслеживают все этапы производства, чтобы обеспечить вам лучший выбор."
             />
           </section>
         </section>
@@ -37,6 +36,11 @@ function AboutScreen() {
             <p className={styles.about__card_text}>МУКА</p>
             <p className={styles.about__card_text}>для лепки</p>
             <Separator separatorType="dark-red" margin="mt-4" />
+            <Paragraph
+              paragraphType="card"
+              text="Откройте для себя секрет идеального вкуса и текстуры ваших любимых блюд. Наши уникальные ингредиенты обеспечивают идеальное сочетание эластичности и мягкости, делая каждое блюдо по-настоящему неповторимым. Позвольте вашему кулинарному творчеству расцвести во всей красе с нашей мукой высшего качества."
+              margin="mt-8"
+            />
           </section>
         </div>
         <div className={styles.about__flower_card}>
@@ -44,6 +48,16 @@ function AboutScreen() {
             <p className={styles.about__card_text}>МУКА</p>
             <p className={styles.about__card_text}>для пиццы</p>
             <Separator separatorType="yellow" margin="mt-4" />
+            <Paragraph
+              paragraphType="card"
+              text="Для настоящих ценителей пиццы!"
+              margin="mt-8"
+            />
+            <Paragraph
+              paragraphType="card"
+              text="Наша специальная мука создана для идеального теста, которос не только легко раскатывается, но и придает вашей пицце неповторимый вкус и хрустящий край."
+              margin="mt-4"
+            />
           </section>
         </div>
         <div className={styles.about__flower_card}>
@@ -51,6 +65,16 @@ function AboutScreen() {
             <p className={styles.about__card_text}>МУКА</p>
             <p className={styles.about__card_text}>для выпечки</p>
             <Separator separatorType="orange" margin="mt-4" />
+            <Paragraph
+              paragraphType="card"
+              text="Отличный хлеб начинается с отличной муки!"
+              margin="mt-8"
+            />
+            <Paragraph
+              paragraphType="card"
+              text="Наша мука для выпечки обеспечит ваши рецепты нежным вкусом и идеальной текстурой."
+              margin="mt-4"
+            />
           </section>
         </div>
       </section>
