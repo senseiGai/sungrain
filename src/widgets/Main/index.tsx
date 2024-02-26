@@ -1,30 +1,14 @@
 import React from "react";
-// import { Parallax } from "react-scroll-parallax";
-// import { useScroll, useTransform, motion } from "framer-motion";
-// import { useRef } from "react";
-import Plx from "react-plx";
 
-// import Header from "@features/Header";
+import Plx from "react-plx";
 
 import styles from "../Main/styles.module.scss";
 
 import Logo from "@assets/Logo/logo.svg";
 
 function MainScreen() {
-  // const main = useRef(null);
-
-  // const { scrollYProgress } = useScroll({
-  //   target: main,
-  //   offset: ["start start", "end end"],
-  // });
-
-  // const scale4 = useTransform(scrollYProgress, [0, 1], [2, 5]);
-
-  // ref = { main };
-
   return (
     <section className={styles.main}>
-      {/* <div className={styles.main__sticky}> */}
       <Plx
         parallaxData={[
           {
@@ -42,10 +26,7 @@ function MainScreen() {
         ]}
       >
         <main className={styles.main__content}>
-          <div
-            // style={{ scale: scale4 }}
-            className={styles.main__content_logo}
-          >
+          <div className={styles.main__content_logo}>
             <Plx
               parallaxData={[
                 {
@@ -67,7 +48,6 @@ function MainScreen() {
           </div>
         </main>
       </Plx>
-      {/* </div> */}
     </section>
   );
 }

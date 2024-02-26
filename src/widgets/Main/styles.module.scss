@@ -1,18 +1,17 @@
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 100vh;
 
   &__content {
     width: 90%;
     display: flex;
     justify-content: center;
+    height: 200vh;
   }
   &__content_logo {
-    @apply mb-24;
-    width: 450px;
+    @apply mt-48;
+    width: 500px;
     height: 450px;
   }
 }
