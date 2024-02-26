@@ -1,0 +1,24 @@
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a262b;
+
+  &__content {
+    width: 90%;
+    @apply mt-44;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__flower {
+    @apply;
+  }
+}
+
+table {
+  width: 40%;
+  border-collapse: collapse;
+}
