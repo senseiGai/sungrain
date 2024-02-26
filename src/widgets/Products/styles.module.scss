@@ -14,11 +14,36 @@
   }
 
   &__flower {
-    @apply;
+    position: relative;
   }
-}
 
-table {
-  width: 40%;
-  border-collapse: collapse;
+  table {
+    @apply mt-16;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  tr {
+    margin-top: clamp(20.5px, 2.13528vw, 82px);
+  }
+
+  th {
+    @apply p-2;
+    color: #223137;
+    font-size: clamp(15px, 1.5624vw, 60px);
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+
+  td {
+    background-color: #fff;
+  }
+
+  &__flower_text_type {
+    background-color: #f9bc21;
+    width: 30%;
+  }
+  &__flower_text_color {
+    background-color: #e08e20;
+  }
 }

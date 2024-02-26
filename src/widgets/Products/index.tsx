@@ -9,7 +9,62 @@ function products() {
     <section className={styles.products}>
       <div className={styles.products__content} id="contacts">
         <section className={styles.products__flower}>
-          <Heading headingType="secondary" text=" мука" />
+          <section className={styles.products__flower_text}>
+            <Heading
+              headingType="secondary"
+              text="Русское поле"
+              margin="mt-52"
+            />
+
+            <table>
+              <tbody>
+                <tr>
+                  <th className={styles.products__flower_text_type}>Сорт</th>
+                  <td>Зерно</td>
+                </tr>
+                <tr>
+                  <th className={styles.products__flower_text_color}>Цвет</th>
+                  <td>Желтый</td>
+                </tr>
+                <tr>
+                  <th className={styles.products__flower_text_number}>
+                    Число падения
+                  </th>
+                  <td>250</td>
+                </tr>
+                <tr>
+                  <th className={styles.products__flower_text_whiteness}>
+                    Белизна
+                  </th>
+                  <td>12%</td>
+                </tr>
+                <tr>
+                  <th className={styles.products__flower_text_moisture}>
+                    Массовая доля влаги
+                  </th>
+                  <td>12%</td>
+                </tr>
+                <tr>
+                  <th className={styles.products__flower_text_gluten}>
+                    Клейковина (сырая)
+                  </th>
+                  <td>27%</td>
+                </tr>
+                <tr>
+                  <th className={styles.products__flower_text_IDK}>ИДК</th>
+                  <td>90</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+
+        <section className={styles.products__flower}>
+          <Heading
+            headingType="secondary"
+            text="Крупчатка золотая"
+            margin="mt-52"
+          />
           <section className={styles.products__flower_text}>
             <table>
               <tbody>
@@ -55,7 +110,11 @@ function products() {
         </section>
 
         <section className={styles.products__flower}>
-          <Heading headingType="secondary" text=" мука" />
+          <Heading
+            headingType="secondary"
+            text="Крупчатка золотая"
+            margin="mt-52"
+          />
           <section className={styles.products__flower_text}>
             <table>
               <tbody>
@@ -101,7 +160,11 @@ function products() {
         </section>
 
         <section className={styles.products__flower}>
-          <Heading headingType="secondary" text=" мука" />
+          <Heading
+            headingType="secondary"
+            text="Крупчатка золотая"
+            margin="mt-52"
+          />
           <section className={styles.products__flower_text}>
             <table>
               <tbody>
@@ -147,7 +210,11 @@ function products() {
         </section>
 
         <section className={styles.products__flower}>
-          <Heading headingType="secondary" text=" мука" />
+          <Heading
+            headingType="secondary"
+            text="Крупчатка золотая"
+            margin="mt-52"
+          />
           <section className={styles.products__flower_text}>
             <table>
               <tbody>
@@ -193,7 +260,11 @@ function products() {
         </section>
 
         <section className={styles.products__flower}>
-          <Heading headingType="secondary" text=" мука" />
+          <Heading
+            headingType="secondary"
+            text="Крупчатка золотая"
+            margin="mt-52"
+          />
           <section className={styles.products__flower_text}>
             <table>
               <tbody>
@@ -239,53 +310,8 @@ function products() {
         </section>
 
         <section className={styles.products__flower}>
-          <Heading headingType="secondary" text=" мука" />
-          <section className={styles.products__flower_text}>
-            <table>
-              <tbody>
-                <tr>
-                  <th className={styles.products__flower_text_type}>Сорт</th>
-                  <td>Зерно</td>
-                </tr>
-                <tr>
-                  <th className={styles.products__flower_text_color}>Цвет</th>
-                  <td>Желтый</td>
-                </tr>
-                <tr>
-                  <th className={styles.products__flower_text_number}>
-                    Число падения
-                  </th>
-                  <td>250</td>
-                </tr>
-                <tr>
-                  <th className={styles.products__flower_text_whiteness}>
-                    Белизна
-                  </th>
-                  <td>12%</td>
-                </tr>
-                <tr>
-                  <th className={styles.products__flower_text_moisture}>
-                    Массовая доля влаги
-                  </th>
-                  <td>12%</td>
-                </tr>
-                <tr>
-                  <th className={styles.products__flower_text_gluten}>
-                    Клейковина (сырая)
-                  </th>
-                  <td>27%</td>
-                </tr>
-                <tr>
-                  <th className={styles.products__flower_text_IDK}>ИДК</th>
-                  <td>90</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </section>
-
-        <section className={styles.products__flower}>
-          <Heading headingType="secondary" text=" мука" />
+          <Heading headingType="secondary" text="Царская каша" margin="mt-52" />
+          <Heading headingType="secondary" text="Крупа гречневая" />
           <section className={styles.products__flower_text}>
             <table>
               <tbody>
