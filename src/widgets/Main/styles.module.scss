@@ -7,10 +7,12 @@
     width: 90%;
     display: flex;
     justify-content: center;
-    height: 200vh;
+    height: 90vh;
   }
   &__content_logo {
-    @apply mt-48;
+    display: flex;
+    justify-content: center;
+    @apply mt-28;
     width: 500px;
     height: 450px;
   }
