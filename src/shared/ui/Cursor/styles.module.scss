@@ -1,0 +1,25 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  @apply bg-primary-red-text;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+@media screen and (min-width: 380px) {
+  .cursor {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cursor {
+    display: flex !important;
+  }
+}

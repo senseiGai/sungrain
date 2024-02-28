@@ -5,14 +5,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: #1a262b;
-
   &__content {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 90vh;
   }
   &__text {
     @apply mt-16;
@@ -36,19 +35,19 @@
   &__flower_card:nth-child(1) {
     position: relative;
     width: clamp(203.5px, 21.19656vw, 814px);
-    background-image: url(../../assets/Cards/hands.webp);
+    background-image: url(../../assets/Cards/photo_02.webp);
     background-position: center;
     background-size: cover;
   }
 
   &__flower_card:nth-child(2) {
-    background-image: url(../../assets/Cards/fire.webp);
+    background-image: url(../../assets/Cards/photo_03.webp);
     width: clamp(203.5px, 21.19656vw, 814px);
     background-position: center;
     background-size: cover;
   }
   &__flower_card:nth-child(3) {
-    background-image: url(../../assets/Cards/hleb.webp);
+    background-image: url(../../assets/Cards/photo_01.webp);
     width: clamp(203.5px, 21.19656vw, 814px);
     background-position: center;
     background-size: cover;

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { CursorFollowProvider, Cursor } from "react-cursor-follow";
 
 import MainScreen from "@widgets/Main";
 import AboutScreen from "@widgets/About";
@@ -15,9 +14,7 @@ const HomePage = () => {
       const maxScroll: number =
         document.documentElement.scrollHeight - window.innerHeight;
       const percentage: number = window.scrollY / maxScroll;
-      // Увеличиваем скорость изменения цвета
-      const coefficient: number = 5; // Увеличили значение коэффициента
-      // Изменяем только прозрачность цвета
+      const coefficient: number = 5;
       setScrollOpacity(percentage * coefficient);
     };
 

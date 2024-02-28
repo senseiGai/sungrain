@@ -1,5 +1,7 @@
 import Plx from "react-plx";
+
 import styles from "../Main/styles.module.scss";
+
 import Logo from "@assets/Logo/logo.svg";
 
 function MainScreen(): JSX.Element {
