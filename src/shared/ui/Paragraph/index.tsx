@@ -1,12 +1,14 @@
 import styles from "../Paragraph/styles.module.scss";
 
 interface ParagraphProps {
+  id?: string;
   text: string;
   margin?: string;
   paragraphType: "default" | "card";
 }
 
 export const Paragraph: React.FC<ParagraphProps> = ({
+  id,
   text,
   margin,
   paragraphType,
@@ -14,5 +16,9 @@ export const Paragraph: React.FC<ParagraphProps> = ({
   const paragraphClass = `${styles.paragraph} ${
     styles[`paragraph--${paragraphType}`]
   } ${margin ? margin : ""}`;
-  return <p className={paragraphClass}>{text}</p>;
+  return (
+    <p className={paragraphClass} id={id}>
+      {text}
+    </p>
+  );
 };

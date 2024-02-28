@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import "@shared/styles/global.scss";
+import "@shared/styles/scrollbar.scss";
 
 import HomePage from "../pages/HomePage";
 

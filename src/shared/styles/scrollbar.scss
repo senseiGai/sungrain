@@ -1,0 +1,18 @@
+*::-webkit-scrollbar {
+  width: clamp(8px, 0.83328vw, 32px);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d25127;
+  border-radius: 18px;
+  border: 18px solid #d25127;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d25127 transparent;
+}

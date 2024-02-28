@@ -62,4 +62,12 @@
     font-weight: 400;
     word-wrap: break-word;
   }
+  #reveal {
+    bottom: -100%;
+  }
+
+  #reveal:hover {
+    bottom: 0;
+    transition: bottom 0.3s ease;
+  }
 }
