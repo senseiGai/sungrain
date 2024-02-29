@@ -31,28 +31,22 @@
     display: flex;
     flex-direction: row;
     height: clamp(394px, 41.03904vw, 1576px);
+    overflow: visible;
   }
-  &__flower_card:nth-child(1) {
+  &__flower_card {
     position: relative;
     width: clamp(203.5px, 21.19656vw, 814px);
-    background-image: url(../../assets/Cards/photo_02.webp);
     background-position: center;
     background-size: cover;
   }
 
-  &__flower_card:nth-child(2) {
-    background-image: url(../../assets/Cards/photo_03.webp);
-    width: clamp(203.5px, 21.19656vw, 814px);
-    background-position: center;
-    background-size: cover;
+  &__flower_picture {
+    position: relative;
   }
-  &__flower_card:nth-child(3) {
-    background-image: url(../../assets/Cards/photo_01.webp);
-    width: clamp(203.5px, 21.19656vw, 814px);
-    background-position: center;
-    background-size: cover;
-  }
+
   &__card_text_section {
+    position: absolute;
+    top: 0px;
     @apply p-6;
   }
   &__card_text {
@@ -62,12 +56,8 @@
     font-weight: 400;
     word-wrap: break-word;
   }
-  #reveal {
-    bottom: -100%;
-  }
+}
 
-  #reveal:hover {
-    bottom: 0;
-    transition: bottom 0.3s ease;
-  }
+.fade {
+  height: clamp(394px, 41.03904vw, 1576px);
 }
