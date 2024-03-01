@@ -16,18 +16,20 @@ function AboutScreen() {
     <section className={styles.about}>
       <div className={styles.about__content} id="about">
         <section className={styles.about__text}>
-          <Fade direction="up" delay={700} triggerOnce>
+          <Fade delay={200} triggerOnce>
             <Heading text="О компании" headingType="primary" />
           </Fade>
-          <Fade direction="left" triggerOnce>
+          <Fade delay={300} triggerOnce>
             <Separator separatorType="red" margin="mt-3" />
           </Fade>
-          <Fade direction="up" delay={800} triggerOnce>
+          <Fade delay={400} triggerOnce>
             <Heading
               text="ТОО “Sun grain”"
               headingType="secondary--small"
               margin="mt-12"
             />
+          </Fade>
+          <Fade delay={500} triggerOnce>
             <section className={styles.about__text_paragraph}>
               <Paragraph
                 id={styles.reveal}

@@ -1,0 +1,64 @@
+%indicator--common {
+  width: 730px;
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.main_text {
+  color: #223137;
+  font-size: clamp(15px, 1.5624vw, 60px);
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.second_text {
+  @apply text-primary-white-text;
+  padding-left: clamp(10px, 1.0416vw, 40px);
+  font-size: clamp(11px, 1.1457600000000001vw, 44px);
+  font-weight: 800;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator--yellow {
+  @extend %indicator--common;
+  background-color: #846d26;
+
+  .indicator--light-yellow {
+    width: clamp(95px, 9.8952vw, 380px);
+    background-color: #f9bc21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.indicator--darken-yellow {
+  @extend %indicator--common;
+  background-color: #785725;
+
+  .indicator--light-darken-yellow {
+    width: clamp(95px, 9.8952vw, 380px);
+    background-color: #e08e20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.indicator--orange {
+  @extend %indicator--common;
+  background-color: #734728;
+
+  .indicator--light-orange {
+    width: clamp(161.5px, 16.82184vw, 646px);
+    background-color: #d56b25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
