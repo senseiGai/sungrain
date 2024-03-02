@@ -32,9 +32,16 @@ interface ProductData {
 interface ProductCardProps {
   indicatorsData: ProductData[];
   src: string;
+  imgType: "default" | "special";
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ indicatorsData, src }) => {
+const ProductCard: React.FC<ProductCardProps> = ({
+  indicatorsData,
+  src,
+  imgType,
+}) => {
+  const imgClass = `${styles.img} ${styles[imgType]}`;
+
   return (
     <section className={styles.card}>
       <Heading
@@ -45,11 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ indicatorsData, src }) => {
       {indicatorsData.map((indicator, index) => (
         <Indicator key={index} {...indicator} />
       ))}
-      <img
-        className={styles.card__flour_picture}
-        src={src}
-        alt="flour picture"
-      />
+      <img className={imgClass} src={src} alt="flour picture" />
     </section>
   );
 };

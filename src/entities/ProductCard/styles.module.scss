@@ -1,11 +1,18 @@
 .card {
   position: relative;
 
-  &__flour_picture {
+  .default {
     position: absolute;
-    width: 880px;
-    height: 970px;
-    left: 1000px;
     top: 0;
+    width: 1200px;
+    height: 940px;
+    left: 830px;
+  }
+  .special {
+    position: absolute;
+    top: 0;
+    width: 800px;
+    height: 940px;
+    left: 1025px;
   }
 }
