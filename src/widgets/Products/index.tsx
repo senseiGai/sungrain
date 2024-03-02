@@ -4,9 +4,10 @@ import ProductCard from "@entities/ProductCard/index";
 
 import styles from "../Products/styles.module.scss";
 
-import Russian from "../../assets/Products/IMG_0008_2 (2).webp";
-import Golden50 from "../../assets/Products/image(1).webp";
-import GoldenCake from "../../assets/Products/IMG_0008_2-min.webp";
+import Russian from "../../assets/Products/russian.webp";
+import Golden50 from "../../assets/Products/golden50.webp";
+import GoldenCake from "../../assets/Products/goldencake.webp";
+import Golden2 from "../../assets/Products/golden2.webp";
 
 function products() {
   return (
@@ -15,7 +16,7 @@ function products() {
         <section className={styles.products__flower}>
           <div className={styles.products__flower_text}>
             <ProductCard
-              imgType="default"
+              imgType="special"
               src={Russian}
               indicatorsData={[
                 {
@@ -222,8 +223,8 @@ function products() {
               ]}
             />
             <ProductCard
-              imgType="default"
-              src={GoldenCake}
+              imgType="special"
+              src={Golden2}
               indicatorsData={[
                 {
                   title: "Крупчатка золотая",
