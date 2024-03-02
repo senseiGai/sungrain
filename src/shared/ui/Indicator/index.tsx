@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import styles from "../Indicator/styles.module.scss";
 
 interface IndicatorProps {
@@ -21,6 +22,7 @@ interface IndicatorProps {
     | "light-light-red"
     | "light-red"
     | "light-darken-red";
+  fillWidthPercentage: number;
 }
 
 export const Indicator: React.FC<IndicatorProps> = ({
@@ -29,7 +31,20 @@ export const Indicator: React.FC<IndicatorProps> = ({
   margin,
   indicatorType,
   indicatorLight,
+  fillWidthPercentage,
 }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setIsAnimated(true);
+    }
+  }, [inView]);
+
   const indicatorClass = `${styles.indicator} ${
     styles[`indicator--${indicatorType}`]
   } ${margin ? margin : ""}`;
@@ -38,9 +53,13 @@ export const Indicator: React.FC<IndicatorProps> = ({
     styles[`indicator--${indicatorLight}`]
   }`;
 
+  const fillStyle = isAnimated
+    ? { width: `${fillWidthPercentage}%` }
+    : { width: "0%" };
+
   return (
-    <div className={indicatorClass}>
-      <div className={indicatorLightClass}>
+    <div ref={ref} className={indicatorClass}>
+      <div className={indicatorLightClass} style={fillStyle}>
         <span className={styles.main_text}>{mainText}</span>
       </div>
       <span className={styles.second_text}>{secondText}</span>

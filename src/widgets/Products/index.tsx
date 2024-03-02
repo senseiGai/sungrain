@@ -22,6 +22,7 @@ function products() {
               secondText="высший"
               indicatorLight="light-yellow"
               margin="mt-16"
+              fillWidthPercentage={25}
             />
             <Indicator
               indicatorType="darken-yellow"
@@ -29,20 +30,23 @@ function products() {
               secondText="белый с кремовым оттенком"
               indicatorLight="light-darken-yellow"
               margin="mt-14"
+              fillWidthPercentage={25}
             />
             <Indicator
               indicatorType="orange"
-              mainText="Цвет"
-              secondText="белый с кремовым оттенком"
+              mainText="Число падения"
+              secondText="240"
               indicatorLight="light-orange"
               margin="mt-14"
+              fillWidthPercentage={65}
             />
             <Indicator
               indicatorType="orange"
-              mainText="Цвет"
-              secondText="белый с кремовым оттенком"
+              mainText="Белизна"
+              secondText="56 усл.ед"
               indicatorLight="light-orange"
               margin="mt-14"
+              fillWidthPercentage={40}
             />
           </div>
         </section>

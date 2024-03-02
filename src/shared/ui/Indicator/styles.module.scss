@@ -11,6 +11,9 @@
   font-size: clamp(15px, 1.5624vw, 60px);
   font-weight: 800;
   text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .second_text {
@@ -29,11 +32,12 @@
   background-color: #846d26;
 
   .indicator--light-yellow {
-    width: clamp(95px, 9.8952vw, 380px);
+    width: 0%; /* Начальная ширина индикатора */
     background-color: #f9bc21;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: width 0.5s ease-in-out; /* Анимация изменения ширины */
   }
 }
 
@@ -42,11 +46,12 @@
   background-color: #785725;
 
   .indicator--light-darken-yellow {
-    width: clamp(95px, 9.8952vw, 380px);
+    width: 0%; /* Начальная ширина индикатора */
     background-color: #e08e20;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: width 0.6s ease-in-out;
   }
 }
 
@@ -55,10 +60,11 @@
   background-color: #734728;
 
   .indicator--light-orange {
-    width: clamp(161.5px, 16.82184vw, 646px);
+    width: 0%; /* Начальная ширина индикатора */
     background-color: #d56b25;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: width 0.7s ease-in-out;
   }
 }
