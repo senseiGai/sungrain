@@ -1,0 +1,11 @@
+.card {
+  position: relative;
+
+  &__flour_picture {
+    position: absolute;
+    width: 880px;
+    height: 970px;
+    left: 1000px;
+    top: 0;
+  }
+}

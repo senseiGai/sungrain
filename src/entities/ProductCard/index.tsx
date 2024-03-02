@@ -1,6 +1,9 @@
 import React from "react";
+
 import { Heading } from "@shared/ui/Heading";
 import { Indicator } from "@shared/ui/Indicator";
+
+import styles from "./styles.module.scss";
 
 interface ProductData {
   mainText: string;
@@ -26,11 +29,14 @@ interface ProductData {
   title: string;
 }
 
-const ProductCard: React.FC<{ indicatorsData: ProductData[] }> = ({
-  indicatorsData,
-}) => {
+interface ProductCardProps {
+  indicatorsData: ProductData[];
+  src: string;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ indicatorsData, src }) => {
   return (
-    <section>
+    <section className={styles.card}>
       <Heading
         headingType="secondary"
         text={indicatorsData[0].title}
@@ -39,6 +45,11 @@ const ProductCard: React.FC<{ indicatorsData: ProductData[] }> = ({
       {indicatorsData.map((indicator, index) => (
         <Indicator key={index} {...indicator} />
       ))}
+      <img
+        className={styles.card__flour_picture}
+        src={src}
+        alt="flour picture"
+      />
     </section>
   );
 };

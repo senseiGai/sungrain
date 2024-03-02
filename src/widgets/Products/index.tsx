@@ -4,6 +4,9 @@ import ProductCard from "@entities/ProductCard/index";
 
 import styles from "../Products/styles.module.scss";
 
+import Russian from "../../assets/Products/IMG_0008_2 (2).webp";
+import Golden50 from "../../assets/Products/IMG_0003_3-min.webp";
+
 function products() {
   return (
     <section className={styles.products}>
@@ -11,6 +14,7 @@ function products() {
         <section className={styles.products__flower}>
           <div className={styles.products__flower_text}>
             <ProductCard
+              src={Russian}
               indicatorsData={[
                 {
                   title: "Русское поле",
@@ -78,6 +82,7 @@ function products() {
               ]}
             />
             <ProductCard
+              src={Golden50}
               indicatorsData={[
                 {
                   title: "Крупчатка золотая",
@@ -121,7 +126,7 @@ function products() {
                   secondText: "14.8%",
                   indicatorType: "light-red",
                   indicatorLight: "light-light-red",
-                  fillWidthPercentage: 85,
+                  fillWidthPercentage: 82,
                   margin: "mt-14",
                 },
                 {
@@ -188,7 +193,7 @@ function products() {
                   secondText: "14.8%",
                   indicatorType: "light-red",
                   indicatorLight: "light-light-red",
-                  fillWidthPercentage: 85,
+                  fillWidthPercentage: 82,
                   margin: "mt-14",
                 },
                 {
@@ -255,7 +260,7 @@ function products() {
                   secondText: "14.8%",
                   indicatorType: "light-red",
                   indicatorLight: "light-light-red",
-                  fillWidthPercentage: 85,
+                  fillWidthPercentage: 82,
                   margin: "mt-14",
                 },
                 {
@@ -322,7 +327,7 @@ function products() {
                   secondText: "14.8%",
                   indicatorType: "light-red",
                   indicatorLight: "light-light-red",
-                  fillWidthPercentage: 85,
+                  fillWidthPercentage: 82,
                   margin: "mt-14",
                 },
                 {
@@ -389,7 +394,7 @@ function products() {
                   secondText: "14.8%",
                   indicatorType: "light-red",
                   indicatorLight: "light-light-red",
-                  fillWidthPercentage: 85,
+                  fillWidthPercentage: 82,
                   margin: "mt-14",
                 },
                 {
