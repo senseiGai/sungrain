@@ -16,7 +16,10 @@
   &__text {
     @apply mt-16;
     text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     &_paragraph {
       @apply mt-4;
       @apply ml-2;
