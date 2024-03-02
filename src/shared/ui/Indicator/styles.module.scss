@@ -8,7 +8,7 @@
 
 .main_text {
   color: #223137;
-  font-size: clamp(15px, 1.5624vw, 60px);
+  font-size: 28px;
   font-weight: 800;
   text-transform: capitalize;
   display: flex;
@@ -66,5 +66,61 @@
     justify-content: center;
     align-items: center;
     transition: width 0.7s ease-in-out;
+  }
+}
+
+.indicator--darken-orange {
+  @extend %indicator--common;
+  background-color: #7a3f28;
+
+  .indicator--light-darken-orange {
+    width: 0%; /* Начальная ширина индикатора */
+    background-color: #e35c25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.8s ease-in-out;
+  }
+}
+
+.indicator--light-red {
+  @extend %indicator--common;
+  background-color: #6d3629;
+
+  .indicator--light-light-red {
+    width: 0%;
+    background-color: #c94827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.9s ease-in-out;
+  }
+}
+
+.indicator--red {
+  @extend %indicator--common;
+  background-color: #5a2f26;
+
+  .indicator--light-red {
+    width: 0%;
+    background-color: #ac2b24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s ease-in-out;
+  }
+}
+
+.indicator--darken-red {
+  @extend %indicator--common;
+  background-color: #47221b;
+
+  .indicator--light-darken-red {
+    width: 0%;
+    background-color: #90241a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1.1s ease-in-out;
   }
 }
