@@ -4,7 +4,7 @@
   width: 100%;
 
   &__content {
-    width: 90%;
+    width: 86.6%;
     display: flex;
     justify-content: center;
     height: 90vh;
@@ -15,5 +15,18 @@
     @apply mt-28;
     width: clamp(250px, 26.04vw, 1000px);
     height: clamp(225px, 23.436vw, 900px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__content {
+      width: 90%;
+      height: 75vh;
+      @apply mt-20;
+    }
   }
 }

@@ -13,3 +13,12 @@
   line-height: clamp(16.22px, 1.6894752vw, 64.88px);
   word-wrap: break-word;
 }
+
+@media only screen and (max-width: 767px) {
+  .paragraph--default {
+    color: white;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-weight: 400;
+    line-height: clamp(14.6px, 6.8222879999999995vw, 58.4px);
+  }
+}

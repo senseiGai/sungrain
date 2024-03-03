@@ -7,3 +7,15 @@
     @apply text-primary-darken;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .linktext {
+    @apply text-indicators-light-dark-text;
+    font-size: clamp(7.5px, 3.5046vw, 30px);
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      @apply text-primary-darken;
+    }
+  }
+}

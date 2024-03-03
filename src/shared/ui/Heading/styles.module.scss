@@ -27,3 +27,25 @@
   @apply text-white;
   font-size: clamp(17.5px, 1.8228vw, 70px);
 }
+
+@media only screen and (max-width: 767px) {
+  .heading--primary {
+    @extend %heading-common;
+    @apply text-primary-red-text;
+    font-size: clamp(20px, 9.3456vw, 80px);
+  }
+
+  .heading--secondary {
+    font-weight: 800;
+    text-transform: uppercase;
+    @apply text-white;
+    font-size: clamp(20px, 9.3456vw, 80px);
+    // width: 80%;
+  }
+
+  .heading--secondary--small {
+    @extend %heading-common;
+    @apply text-white;
+    font-size: clamp(14px, 6.541919999999999vw, 56px);
+  }
+}
