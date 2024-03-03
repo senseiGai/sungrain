@@ -16,3 +16,26 @@
     left: clamp(512.5px, 53.382vw, 2050px);
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .default {
+      position: absolute;
+      top: -100px;
+      width: 100px;
+      height: 100px;
+    }
+    .special {
+      position: absolute;
+      top: 1000px;
+      width: 400px;
+      height: 400px;
+      left: -0.85px;
+    }
+  }
+}

@@ -27,7 +27,7 @@ function products() {
                 indicatorType: "yellow",
                 indicatorLight: "light-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-16",
+                margin: "mt-12",
               },
               {
                 title: " ",
@@ -36,7 +36,7 @@ function products() {
                 indicatorType: "darken-yellow",
                 indicatorLight: "light-darken-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -45,7 +45,7 @@ function products() {
                 indicatorType: "orange",
                 indicatorLight: "light-orange",
                 fillWidthPercentage: 65,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -54,7 +54,7 @@ function products() {
                 indicatorType: "darken-orange",
                 indicatorLight: "light-darken-orange",
                 fillWidthPercentage: 40,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -63,7 +63,7 @@ function products() {
                 indicatorType: "light-red",
                 indicatorLight: "light-light-red",
                 fillWidthPercentage: 80,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -72,7 +72,7 @@ function products() {
                 indicatorType: "red",
                 indicatorLight: "light-red",
                 fillWidthPercentage: 70,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -81,7 +81,7 @@ function products() {
                 indicatorType: "darken-red",
                 indicatorLight: "light-darken-red",
                 fillWidthPercentage: 30,
-                margin: "mt-14",
+                margin: "mt-10",
               },
             ]}
           />
@@ -96,7 +96,7 @@ function products() {
                 indicatorType: "yellow",
                 indicatorLight: "light-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-16",
+                margin: "mt-12",
               },
               {
                 title: " ",
@@ -105,7 +105,7 @@ function products() {
                 indicatorType: "darken-yellow",
                 indicatorLight: "light-darken-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -114,7 +114,7 @@ function products() {
                 indicatorType: "orange",
                 indicatorLight: "light-orange",
                 fillWidthPercentage: 65,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -123,7 +123,7 @@ function products() {
                 indicatorType: "darken-orange",
                 indicatorLight: "light-darken-orange",
                 fillWidthPercentage: 40,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -132,7 +132,7 @@ function products() {
                 indicatorType: "light-red",
                 indicatorLight: "light-light-red",
                 fillWidthPercentage: 82,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -141,7 +141,7 @@ function products() {
                 indicatorType: "red",
                 indicatorLight: "light-red",
                 fillWidthPercentage: 77,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -150,7 +150,7 @@ function products() {
                 indicatorType: "darken-red",
                 indicatorLight: "light-darken-red",
                 fillWidthPercentage: 27,
-                margin: "mt-14",
+                margin: "mt-10",
               },
             ]}
           />
@@ -165,7 +165,7 @@ function products() {
                 indicatorType: "yellow",
                 indicatorLight: "light-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-16",
+                margin: "mt-12",
               },
               {
                 title: " ",
@@ -174,7 +174,7 @@ function products() {
                 indicatorType: "darken-yellow",
                 indicatorLight: "light-darken-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -183,7 +183,7 @@ function products() {
                 indicatorType: "orange",
                 indicatorLight: "light-orange",
                 fillWidthPercentage: 65,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -192,7 +192,7 @@ function products() {
                 indicatorType: "darken-orange",
                 indicatorLight: "light-darken-orange",
                 fillWidthPercentage: 40,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -201,7 +201,7 @@ function products() {
                 indicatorType: "light-red",
                 indicatorLight: "light-light-red",
                 fillWidthPercentage: 82,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -210,7 +210,7 @@ function products() {
                 indicatorType: "red",
                 indicatorLight: "light-red",
                 fillWidthPercentage: 77,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -219,7 +219,7 @@ function products() {
                 indicatorType: "darken-red",
                 indicatorLight: "light-darken-red",
                 fillWidthPercentage: 27,
-                margin: "mt-14",
+                margin: "mt-10",
               },
             ]}
           />
@@ -234,7 +234,7 @@ function products() {
                 indicatorType: "yellow",
                 indicatorLight: "light-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-16",
+                margin: "mt-12",
               },
               {
                 title: " ",
@@ -243,7 +243,7 @@ function products() {
                 indicatorType: "darken-yellow",
                 indicatorLight: "light-darken-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -252,7 +252,7 @@ function products() {
                 indicatorType: "orange",
                 indicatorLight: "light-orange",
                 fillWidthPercentage: 65,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -261,7 +261,7 @@ function products() {
                 indicatorType: "darken-orange",
                 indicatorLight: "light-darken-orange",
                 fillWidthPercentage: 40,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -270,7 +270,7 @@ function products() {
                 indicatorType: "light-red",
                 indicatorLight: "light-light-red",
                 fillWidthPercentage: 82,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -279,7 +279,7 @@ function products() {
                 indicatorType: "red",
                 indicatorLight: "light-red",
                 fillWidthPercentage: 77,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -288,7 +288,7 @@ function products() {
                 indicatorType: "darken-red",
                 indicatorLight: "light-darken-red",
                 fillWidthPercentage: 27,
-                margin: "mt-14",
+                margin: "mt-10",
               },
             ]}
           />
@@ -303,7 +303,7 @@ function products() {
                 indicatorType: "yellow",
                 indicatorLight: "light-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-16",
+                margin: "mt-12",
               },
               {
                 title: " ",
@@ -312,7 +312,7 @@ function products() {
                 indicatorType: "darken-yellow",
                 indicatorLight: "light-darken-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -321,7 +321,7 @@ function products() {
                 indicatorType: "orange",
                 indicatorLight: "light-orange",
                 fillWidthPercentage: 65,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -330,7 +330,7 @@ function products() {
                 indicatorType: "darken-orange",
                 indicatorLight: "light-darken-orange",
                 fillWidthPercentage: 40,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -339,7 +339,7 @@ function products() {
                 indicatorType: "light-red",
                 indicatorLight: "light-light-red",
                 fillWidthPercentage: 82,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -348,7 +348,7 @@ function products() {
                 indicatorType: "red",
                 indicatorLight: "light-red",
                 fillWidthPercentage: 77,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -357,7 +357,7 @@ function products() {
                 indicatorType: "darken-red",
                 indicatorLight: "light-darken-red",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
             ]}
           />
@@ -372,7 +372,7 @@ function products() {
                 indicatorType: "yellow",
                 indicatorLight: "light-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-16",
+                margin: "mt-12",
               },
               {
                 title: " ",
@@ -381,7 +381,7 @@ function products() {
                 indicatorType: "darken-yellow",
                 indicatorLight: "light-darken-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -390,7 +390,7 @@ function products() {
                 indicatorType: "orange",
                 indicatorLight: "light-orange",
                 fillWidthPercentage: 65,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -399,7 +399,7 @@ function products() {
                 indicatorType: "darken-orange",
                 indicatorLight: "light-darken-orange",
                 fillWidthPercentage: 40,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -408,7 +408,7 @@ function products() {
                 indicatorType: "light-red",
                 indicatorLight: "light-light-red",
                 fillWidthPercentage: 82,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -417,7 +417,7 @@ function products() {
                 indicatorType: "red",
                 indicatorLight: "light-red",
                 fillWidthPercentage: 77,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -426,7 +426,7 @@ function products() {
                 indicatorType: "darken-red",
                 indicatorLight: "light-darken-red",
                 fillWidthPercentage: 25,
-                margin: "mt-14",
+                margin: "mt-10",
               },
             ]}
           />
@@ -441,7 +441,7 @@ function products() {
                 indicatorType: "yellow",
                 indicatorLight: "light-yellow",
                 fillWidthPercentage: 25,
-                margin: "mt-16",
+                margin: "mt-12",
               },
               {
                 title: " ",
@@ -450,7 +450,7 @@ function products() {
                 indicatorType: "darken-yellow",
                 indicatorLight: "light-darken-yellow",
                 fillWidthPercentage: 70,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -459,7 +459,7 @@ function products() {
                 indicatorType: "orange",
                 indicatorLight: "light-orange",
                 fillWidthPercentage: 35,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -468,7 +468,7 @@ function products() {
                 indicatorType: "darken-orange",
                 indicatorLight: "light-darken-orange",
                 fillWidthPercentage: 34,
-                margin: "mt-14",
+                margin: "mt-10",
               },
               {
                 title: " ",
@@ -477,7 +477,7 @@ function products() {
                 indicatorType: "light-red",
                 indicatorLight: "light-light-red",
                 fillWidthPercentage: 42,
-                margin: "mt-14",
+                margin: "mt-10",
               },
             ]}
           />

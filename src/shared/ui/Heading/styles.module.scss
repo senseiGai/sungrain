@@ -36,11 +36,8 @@
   }
 
   .heading--secondary {
-    font-weight: 800;
-    text-transform: uppercase;
-    @apply text-white;
-    font-size: clamp(20px, 9.3456vw, 80px);
-    // width: 80%;
+    font-size: clamp(15px, 7.0092vw, 60px);
+    width: 100%;
   }
 
   .heading--secondary--small {

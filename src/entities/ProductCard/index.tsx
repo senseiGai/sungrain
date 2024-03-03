@@ -47,7 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <Heading
         headingType="secondary"
         text={indicatorsData[0].title}
-        margin="mt-52"
+        margin="mt-96"
       />
       {indicatorsData.map((indicator, index) => (
         <Indicator key={index} {...indicator} />
