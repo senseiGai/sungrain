@@ -61,7 +61,9 @@ function Form() {
         />
         {errors.phone && <p className={styles.error}>{errors.phone.message}</p>}
       </div>
-      <button type="submit">Отправить</button>
+      <button type="submit" className={styles.from__submit_button}>
+        Отправить
+      </button>
     </form>
   );
 }

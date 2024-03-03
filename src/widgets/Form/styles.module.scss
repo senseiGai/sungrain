@@ -6,7 +6,10 @@
   flex-direction: column;
 
   &__input_phone {
-    @apply mt-12;
+    @apply mt-14;
+  }
+  &__submit_button {
+    @apply mt-5;
   }
 
   .error {
