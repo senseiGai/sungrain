@@ -12,7 +12,7 @@
   &__content_logo {
     display: flex;
     justify-content: center;
-    @apply mt-28;
+    @apply mt-16;
     width: clamp(250px, 26.04vw, 1000px);
     height: clamp(225px, 23.436vw, 900px);
   }

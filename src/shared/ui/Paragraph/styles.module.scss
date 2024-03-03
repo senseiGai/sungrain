@@ -21,4 +21,12 @@
     font-weight: 400;
     line-height: clamp(14.6px, 6.8222879999999995vw, 58.4px);
   }
+  .paragraph--card {
+    text-align: left;
+    color: white;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-weight: 400;
+    line-height: clamp(16.22px, 7.579281599999999vw, 64.88px);
+    word-wrap: break-word;
+  }
 }

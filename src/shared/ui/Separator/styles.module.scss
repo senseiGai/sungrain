@@ -29,3 +29,24 @@
   border: none;
   outline: none;
 }
+
+@media only screen and (max-width: 767px) {
+  .separator--red {
+    width: clamp(160px, 74.7648vw, 640px);
+    height: clamp(1px, 0.46728vw, 4px);
+  }
+  .separator--dark-red {
+    width: clamp(140px, 65.41919999999999vw, 560px);
+    height: clamp(1px, 0.46728vw, 4px);
+  }
+
+  .separator--yellow {
+    width: clamp(140px, 65.41919999999999vw, 560px);
+    height: clamp(1px, 0.46728vw, 4px);
+  }
+
+  .separator--orange {
+    width: clamp(140px, 65.41919999999999vw, 560px);
+    height: clamp(1px, 0.46728vw, 4px);
+  }
+}

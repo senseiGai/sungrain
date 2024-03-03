@@ -33,14 +33,12 @@
     display: flex;
     flex-direction: row;
     height: clamp(394px, 41.03904vw, 1576px);
-    overflow: visible;
   }
   &__flower_card {
     position: relative;
     width: clamp(203.5px, 21.19656vw, 814px);
     background-position: center;
     background-size: cover;
-    cursor: pointer;
   }
 
   &__flower_picture {
@@ -67,5 +65,41 @@
     color: white;
     font-size: clamp(16px, 1.66656vw, 64px);
     font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    margin-top: clamp(37.5px, 17.523vw, 150px);
+    &__content {
+      width: 90%;
+      height: 70vh;
+    }
+    &__text {
+      @apply mt-16;
+      flex-direction: column;
+      &_paragraph {
+        @apply mt-4;
+        text-align: center;
+        width: clamp(220.5px, 103.03523999999999vw, 882px);
+        height: clamp(101.5px, 10.57224vw, 406px);
+      }
+    }
+    &__flower_cards {
+      @apply mt-44;
+      display: flex;
+      flex-direction: column;
+      height: clamp(394px, 184.10832vw, 1576px);
+    }
+    &__flower_card {
+      @apply mt-8;
+      width: clamp(190px, 88.7832vw, 760px);
+    }
+    &__card_text_section {
+      @apply p-5;
+    }
+    &__card_text {
+      font-size: clamp(16px, 7.47648vw, 64px);
+    }
   }
 }
