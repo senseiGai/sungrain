@@ -1,0 +1,31 @@
+.wrapper {
+  position: relative;
+}
+
+.input--pc {
+  font-size: clamp(8px, 0.83328vw, 32px);
+  width: clamp(175px, 18.228vw, 700px);
+  text-align: left;
+  color: #d25127;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px #fff solid;
+  transition: border-bottom 0.3s ease;
+  outline: none;
+  background: transparent;
+}
+
+.input--pc:focus {
+  border-bottom: 2px #d25127 solid;
+}
+
+.label {
+  position: absolute;
+  color: #fff;
+  transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.labelFocused {
+  transform: translateY(-30px);
+}

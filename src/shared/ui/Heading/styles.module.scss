@@ -2,6 +2,10 @@
   font-weight: 800;
   text-transform: uppercase;
   word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading--primary {
@@ -11,7 +15,8 @@
 }
 
 .heading--secondary {
-  @extend %heading-common;
+  font-weight: 800;
+  text-transform: uppercase;
   @apply text-white;
   font-size: clamp(30px, 3.1248vw, 120px);
   width: 45%;
