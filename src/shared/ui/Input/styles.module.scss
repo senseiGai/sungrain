@@ -3,6 +3,7 @@
 }
 
 .input--pc {
+  @apply mt-1;
   font-size: clamp(8px, 0.83328vw, 32px);
   width: clamp(175px, 18.228vw, 700px);
   text-align: left;
@@ -22,10 +23,11 @@
 
 .label {
   position: absolute;
-  color: #fff;
+  top: 20px; /* Adjust as needed */
+  left: 0;
   transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 
 .labelFocused {
-  transform: translateY(-30px);
+  transform: translateY(-30px); /* Adjust as needed */
 }

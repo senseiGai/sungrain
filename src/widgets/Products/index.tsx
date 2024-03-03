@@ -14,7 +14,7 @@ import Pizza from "../../assets/Products/pizza.webp";
 function products() {
   return (
     <section className={styles.products}>
-      <div className={styles.products__content} id="contacts">
+      <div className={styles.products__content} id="products">
         <div className={styles.products__flour}>
           <ProductCard
             imgType="special"

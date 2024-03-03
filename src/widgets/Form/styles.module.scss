@@ -8,4 +8,11 @@
   &__input_phone {
     @apply mt-12;
   }
+
+  .error {
+    @apply mt-4;
+    font-weight: 400;
+    font-size: 15px;
+    color: red;
+  }
 }
