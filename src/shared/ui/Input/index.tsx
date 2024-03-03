@@ -1,5 +1,6 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState, forwardRef, useRef } from "react";
 import styles from "./styles.module.scss";
+import { useCustomLabel } from "../../../shared/lib/hooks/useCustomLabel";
 
 interface DefaultInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -12,16 +13,19 @@ const InputProp = forwardRef<HTMLInputElement, DefaultInputProps>(
   ({ margin, inputType, labelText, ...rest }, ref) => {
     const [focused, setFocused] = useState(false);
     const [value, setValue] = useState("");
+    const labelRef = useRef<HTMLLabelElement>(null);
+
+    const { onLabelFocus, onLabelBlur } = useCustomLabel(labelRef);
 
     const handleFocus = () => {
       setFocused(true);
+      onLabelFocus();
     };
 
     const handleBlur = () => {
       setFocused(false);
-      // Проверяем, если значение пустое, возвращаем label на исходную позицию
       if (!value) {
-        setValue("");
+        onLabelBlur();
       }
     };
 
@@ -32,7 +36,6 @@ const InputProp = forwardRef<HTMLInputElement, DefaultInputProps>(
       }
     };
 
-    // Объединяем классы для inputClass
     const inputClass = `${styles.input} ${styles[`input--${inputType}`]} ${
       margin || ""
     }`;
@@ -40,6 +43,7 @@ const InputProp = forwardRef<HTMLInputElement, DefaultInputProps>(
     return (
       <div className={styles.wrapper}>
         <label
+          ref={labelRef}
           className={`${styles.label} ${
             focused || value ? styles.labelFocused : ""
           }`}

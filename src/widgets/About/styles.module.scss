@@ -40,6 +40,7 @@
     width: clamp(203.5px, 21.19656vw, 814px);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
 
   &__flower_picture {
@@ -51,14 +52,20 @@
     top: 0px;
     @apply p-6;
   }
+
+  &__card_text_hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .about__flower_card:hover .about__card_text_hidden {
+    opacity: 1;
+  }
+
   &__card_text {
     @apply mt-1;
     color: white;
     font-size: clamp(16px, 1.66656vw, 64px);
     font-weight: 400;
   }
-}
-
-.fade {
-  height: clamp(394px, 41.03904vw, 1576px);
 }
