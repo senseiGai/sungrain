@@ -1,6 +1,6 @@
 %indicator--common {
-  width: 570px;
-  height: 63px;
+  width: clamp(285px, 29.6856vw, 1140px);
+  height: clamp(31.5px, 3.28104vw, 126px);
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -8,7 +8,7 @@
 
 .main_text {
   color: #223137;
-  font-size: 28px;
+  font-size: clamp(14px, 1.45824vw, 56px);
   font-weight: 800;
   text-transform: capitalize;
   display: flex;
@@ -32,12 +32,12 @@
   background-color: #846d26;
 
   .indicator--light-yellow {
-    width: 0%; /* Начальная ширина индикатора */
+    width: 0%;
     background-color: #f9bc21;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.5s ease-in-out; /* Анимация изменения ширины */
+    transition: width 0.5s ease-in-out;
   }
 }
 
@@ -46,7 +46,7 @@
   background-color: #785725;
 
   .indicator--light-darken-yellow {
-    width: 0%; /* Начальная ширина индикатора */
+    width: 0%;
     background-color: #e08e20;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
   background-color: #734728;
 
   .indicator--light-orange {
-    width: 0%; /* Начальная ширина индикатора */
+    width: 0%;
     background-color: #d56b25;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@
   background-color: #7a3f28;
 
   .indicator--light-darken-orange {
-    width: 0%; /* Начальная ширина индикатора */
+    width: 0%;
     background-color: #e35c25;
     display: flex;
     justify-content: center;

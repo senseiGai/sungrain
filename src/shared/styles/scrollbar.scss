@@ -8,8 +8,8 @@
 
 *::-webkit-scrollbar-thumb {
   background-color: #d25127;
-  border-radius: 18px;
-  border: 18px solid #d25127;
+  border-radius: clamp(9px, 0.93744vw, 36px);
+  border: clamp(9px, 0.93744vw, 36px) solid #d25127;
 }
 
 * {

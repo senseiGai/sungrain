@@ -4,15 +4,15 @@
   .default {
     position: absolute;
     top: 0;
-    width: 1100px;
-    height: 940px;
-    left: 830px;
+    width: clamp(550px, 57.288000000000004vw, 2200px);
+    height: clamp(470px, 48.9552vw, 1880px);
+    left: clamp(415px, 43.2264vw, 1660px);
   }
   .special {
     position: absolute;
     top: 0;
-    width: 800px;
-    height: 940px;
-    left: 1025px;
+    width: clamp(400px, 41.664vw, 1600px);
+    height: clamp(470px, 48.9552vw, 1880px);
+    left: clamp(512.5px, 53.382vw, 2050px);
   }
 }

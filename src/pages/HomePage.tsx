@@ -14,7 +14,7 @@ const HomePage = () => {
       const maxScroll: number =
         document.documentElement.scrollHeight - window.innerHeight;
       const percentage: number = window.scrollY / maxScroll;
-      const coefficient: number = 5;
+      const coefficient: number = 12;
       setScrollOpacity(percentage * coefficient);
     };
 

@@ -7,18 +7,18 @@
 .heading--primary {
   @extend %heading-common;
   @apply text-primary-red-text;
-  font-size: 60px;
+  font-size: clamp(30px, 3.1248vw, 120px);
 }
 
 .heading--secondary {
   @extend %heading-common;
   @apply text-white;
-  font-size: 60px;
+  font-size: clamp(30px, 3.1248vw, 120px);
   width: 45%;
 }
 
 .heading--secondary--small {
   @extend %heading-common;
   @apply text-white;
-  font-size: 35px;
+  font-size: clamp(17.5px, 1.8228vw, 70px);
 }

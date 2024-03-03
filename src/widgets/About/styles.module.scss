@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  margin-top: clamp(34.655px, 3.6096648vw, 138.62px);
+  margin-top: clamp(37.5px, 3.906vw, 150px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,6 @@
     flex-direction: column;
     &_paragraph {
       @apply mt-4;
-      @apply ml-2;
       text-align: center;
       width: clamp(220.5px, 22.96728vw, 882px);
       height: clamp(101.5px, 10.57224vw, 406px);
@@ -57,7 +56,6 @@
     color: white;
     font-size: clamp(16px, 1.66656vw, 64px);
     font-weight: 400;
-    word-wrap: break-word;
   }
 }
 

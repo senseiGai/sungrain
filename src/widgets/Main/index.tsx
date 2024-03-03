@@ -29,7 +29,7 @@ function MainScreen(): JSX.Element {
               parallaxData={[
                 {
                   start: "self",
-                  end: "50vh",
+                  end: "30vh",
                   easing: "easeIn",
                   properties: [
                     {

@@ -15,21 +15,21 @@ function AboutScreen() {
   return (
     <section className={styles.about}>
       <div className={styles.about__content} id="about">
-        <section className={styles.about__text}>
-          <Fade delay={200} triggerOnce>
+        <div className={styles.about__text}>
+          <Fade delay={300} triggerOnce>
             <Heading text="О компании" headingType="primary" />
           </Fade>
-          <Fade delay={300} triggerOnce>
+          <Fade delay={400} triggerOnce>
             <Separator separatorType="red" margin="mt-3" />
           </Fade>
-          <Fade delay={400} triggerOnce>
+          <Fade delay={500} triggerOnce>
             <Heading
               text="ТОО “Sun grain”"
               headingType="secondary--small"
               margin="mt-12"
             />
           </Fade>
-          <Fade delay={500} triggerOnce>
+          <Fade delay={600} triggerOnce>
             <section className={styles.about__text_paragraph}>
               <Paragraph
                 id={styles.reveal}
@@ -43,9 +43,9 @@ function AboutScreen() {
               />
             </section>
           </Fade>
-        </section>
+        </div>
       </div>
-      <section className={styles.about__flower_cards}>
+      <div className={styles.about__flower_cards}>
         <Fade direction="up" triggerOnce className={styles.fade}>
           <div className={styles.about__flower_card}>
             <img
@@ -118,7 +118,7 @@ function AboutScreen() {
             </section>
           </div>
         </Fade>
-      </section>
+      </div>
     </section>
   );
 }

@@ -13,18 +13,18 @@
   }
 
   &__content_links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     left: 0%;
     top: 0%;
     right: 0%;
-    bottom: auto;
     z-index: 999;
+    bottom: auto;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
+    padding-top: clamp(15px, 1.5624vw, 60px);
+    padding-bottom: clamp(15px, 1.5624vw, 60px);
   }
 }
