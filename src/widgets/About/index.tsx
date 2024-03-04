@@ -33,12 +33,23 @@ function AboutScreen() {
             <section className={styles.about__text_paragraph}>
               <Paragraph
                 paragraphType="default"
-                text="Ваш источник превосходного зерна по выгодным ценам. Мы гарантируем, что каждая партия нашего продукта соответствует самым высоким стандартам качества."
+                text='Добро пожаловать в мир качественных продуктов перемола от ТОО "SUN GRAIN"!'
               />
               <Paragraph
                 paragraphType="default"
-                text="Наши специалисты постоянно отслеживают все этапы производства, чтобы обеспечить вам лучший выбор."
+                text="Мы являемся поставщиками высококлассной муки и гречневой крупы ядрицы, предоставляя нашим клиентам непревзойденное качество и натуральность в каждом продукте."
               />
+              {/* <Separator separatorType="red" />
+              <Paragraph
+                paragraphType="default"
+                text='В "SUN GRAIN" мы стремимся сделать Ваш повседневный опыт приготовления пищи неповторимым, предоставляя продукты выдающегося качества. Наша миссия - предложить Вам только лучшее, чтобы Вы могли создавать восхитительные блюда с уверенностью в своих ингредиентах.'
+              />
+              <Separator separatorType="red" />
+
+              <Paragraph
+                paragraphType="default"
+                text="Наши продукты соответствуют высоким стандартам качества и безопасности. Мы строго соблюдаем все необходимые сертификационные требования, чтобы уверенно предоставлять Вам продукцию, которой можно доверять."
+              /> */}
             </section>
           </Fade>
         </div>
@@ -57,7 +68,6 @@ function AboutScreen() {
               <Separator separatorType="dark-red" margin="mt-4" />
               <div className={styles.about__card_text_hidden}>
                 <Paragraph
-                  id="reveal"
                   paragraphType="card"
                   text="Откройте для себя секрет идеального вкуса и текстуры..."
                   margin="mt-8"
@@ -66,7 +76,7 @@ function AboutScreen() {
             </section>
           </div>
         </Fade>
-        <Fade direction="up" delay={300} triggerOnce className="fade">
+        <Fade direction="up" delay={200} triggerOnce className="fade">
           <div className={styles.about__flower_card} id="fire">
             <img
               src={Fire}
@@ -79,7 +89,6 @@ function AboutScreen() {
               <Separator separatorType="yellow" margin="mt-4" />
               <div className={styles.about__card_text_hidden}>
                 <Paragraph
-                  id="reveal"
                   paragraphType="card"
                   text="Для настоящих ценителей пиццы!"
                   margin="mt-8"
@@ -94,7 +103,7 @@ function AboutScreen() {
             </section>
           </div>
         </Fade>
-        <Fade direction="up" delay={600} triggerOnce>
+        <Fade direction="up" delay={400} triggerOnce>
           <div className={styles.about__flower_card} id="bread">
             <img
               src={Bread}
@@ -107,13 +116,11 @@ function AboutScreen() {
               <Separator separatorType="orange" margin="mt-4" />
               <div className={styles.about__card_text_hidden}>
                 <Paragraph
-                  id="reveal"
                   paragraphType="card"
                   text="Отличный хлеб начинается с отличной муки!"
                   margin="mt-8"
                 />
                 <Paragraph
-                  id="reveal"
                   paragraphType="card"
                   text="Наша мука для выпечки обеспечит ваши рецепты нежным вкусом и идеальной текстурой."
                   margin="mt-4"

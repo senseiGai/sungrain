@@ -70,7 +70,8 @@
 
 @media only screen and (max-width: 767px) {
   .about {
-    margin-top: clamp(37.5px, 17.523vw, 150px);
+    margin-top: clamp(45px, 21.0276vw, 180px);
+    width: 100%;
     &__content {
       width: 90%;
       height: 70vh;
@@ -78,21 +79,22 @@
     &__text {
       @apply mt-16;
       flex-direction: column;
+      text-align: center;
       &_paragraph {
         @apply mt-4;
         text-align: center;
-        width: clamp(220.5px, 103.03523999999999vw, 882px);
-        height: clamp(101.5px, 10.57224vw, 406px);
+        width: clamp(185px, 86.4468vw, 740px);
       }
     }
     &__flower_cards {
-      @apply mt-44;
+      // margin-top: clamp(275px, 128.50199999999998vw, 1100px);
+      @apply mt-36;
       display: flex;
       flex-direction: column;
       height: clamp(394px, 184.10832vw, 1576px);
     }
     &__flower_card {
-      @apply mt-8;
+      @apply mt-12;
       width: clamp(190px, 88.7832vw, 760px);
     }
     &__card_text_section {
@@ -100,6 +102,18 @@
     }
     &__card_text {
       font-size: clamp(16px, 7.47648vw, 64px);
+    }
+    &__card_text_hidden {
+      opacity: 0;
+      animation: fadeIn 7s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   }
 }

@@ -33,7 +33,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/registration/page.tsx"
+    "app/registration/page.tsx",
+    "src/shared/lib/hooks/determineHeaderTextColor.js"
   ],
   "exclude": ["node_modules"]
 }
