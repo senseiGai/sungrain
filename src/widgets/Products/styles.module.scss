@@ -11,14 +11,20 @@
     justify-content: center;
     flex-direction: column;
   }
+  &__flour_card {
+    @apply mt-56;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .products {
     width: 100%;
-    margin-top: clamp(650px, 303.73199999999997vw, 2600px);
+    margin-top: clamp(450px, 210.27599999999998vw, 1800px);
     &__content {
       width: 90%;
+    }
+    &__flour_card {
+      margin-top: clamp(265px, 123.82919999999999vw, 1060px);
     }
   }
 }

@@ -32,7 +32,7 @@ interface ProductData {
 interface ProductCardProps {
   indicatorsData: ProductData[];
   src: string;
-  imgType: "default" | "special";
+  imgType: "default" | "special" | "king";
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -44,11 +44,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
     <section className={styles.card}>
-      <Heading
-        headingType="secondary"
-        text={indicatorsData[0].title}
-        margin="mt-96"
-      />
+      <Heading headingType="secondary" text={indicatorsData[0].title} />
       {indicatorsData.map((indicator, index) => (
         <Indicator key={index} {...indicator} />
       ))}
