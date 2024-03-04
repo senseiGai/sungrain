@@ -17,7 +17,7 @@ function Contacts() {
             <Heading text="Контакты" headingType="primary" margin="mb-3" />
           </Fade>
           <Fade delay={200}>
-            <Separator separatorType="red" margin="ml-6" />
+            <Separator separatorType="red" />
           </Fade>
           <Fade delay={300}>
             <div className={styles.contacts__text_paragraph}>

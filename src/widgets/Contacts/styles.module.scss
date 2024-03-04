@@ -26,7 +26,28 @@
       @apply mt-8;
       text-align: center;
       width: clamp(255px, 26.5608vw, 1020px);
-      height: clamp(47.5px, 4.9476vw, 190px);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contacts {
+    width: 100%;
+
+    &__content {
+      width: 90%;
+      height: 90vh;
+      @apply mt-96;
+    }
+    &__text {
+      @apply mt-12;
+      text-align: center;
+
+      &_paragraph {
+        @apply mt-8;
+        text-align: center;
+        width: clamp(170px, 79.43759999999999vw, 680px);
+      }
     }
   }
 }
