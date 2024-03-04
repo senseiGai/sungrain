@@ -10,6 +10,7 @@ import GoldenCake from "../../assets/Products/goldencake.webp";
 import Golden2 from "../../assets/Products/golden2.webp";
 import Golden25 from "../../assets/Products/golden25.webp";
 import Pizza from "../../assets/Products/pizza.webp";
+import King from "@assets/Products/IMG_0029_1_2.webp";
 
 function products() {
   return (
@@ -445,7 +446,7 @@ function products() {
           <div className={styles.products__flour_card}>
             <ProductCard
               imgType="king"
-              src={Pizza}
+              src={King}
               indicatorsData={[
                 {
                   title: "Царская каша крупа гречневая",

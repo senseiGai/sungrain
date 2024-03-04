@@ -35,6 +35,8 @@ function Header({ textColor }: HeaderProps) {
             />
           </ul>
         </nav>
+        {/* Добавляем точки */}
+        <div className="pulse-dot-menu"></div>
       </div>
     </header>
   );
