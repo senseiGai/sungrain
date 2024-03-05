@@ -1,7 +1,8 @@
 import React from "react";
 import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
 
-import Input from "@shared/ui/Input";
+import { Input } from "@shared/ui/Input/index";
+import { Button } from "@shared/ui/Button/index";
 
 import styles from "./styles.module.scss";
 
@@ -31,7 +32,6 @@ function Form() {
     <form className={styles.form} onSubmit={handleSubmit(submit, error)}>
       <div className={styles.form__input_name}>
         <Input
-          inputType="pc"
           labelText="Введите ваше имя"
           {...register("name", {
             required: "Это поле обязательно к заполнению",
@@ -45,11 +45,12 @@ function Form() {
             },
           })}
         />
-        {errors.name && <p className={styles.error}>{errors.name.message}</p>}
+        {errors.name && (
+          <span className={styles.error}>{errors.name.message}</span>
+        )}
       </div>
       <div className={styles.form__input_phone}>
         <Input
-          inputType="pc"
           labelText="Ваш номер телефона"
           {...register("phone", {
             required: "Это поле обязательно к заполнению",
@@ -59,11 +60,11 @@ function Form() {
             },
           })}
         />
-        {errors.phone && <p className={styles.error}>{errors.phone.message}</p>}
+        {errors.phone && (
+          <span className={styles.error}>{errors.phone.message}</span>
+        )}
       </div>
-      <button type="submit" className={styles.from__submit_button}>
-        Отправить
-      </button>
+      <Button type="submit" buttonType="filled" text="Отправить" />
     </form>
   );
 }
