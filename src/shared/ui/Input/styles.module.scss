@@ -27,3 +27,16 @@
     color: #fff;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .input_container {
+    width: clamp(125px, 58.41vw, 500px);
+
+    &__label {
+      font-size: clamp(10px, 4.6728vw, 40px);
+    }
+    &__input {
+      font-size: clamp(10px, 4.6728vw, 40px);
+    }
+  }
+}
