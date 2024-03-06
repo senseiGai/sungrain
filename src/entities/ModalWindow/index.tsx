@@ -6,6 +6,7 @@ import Logo from "@assets/Logo/logo.svg";
 import styles from "./styles.module.scss";
 import { useDispatch } from "react-redux";
 import { toggleOffModal } from "../../redux/modalSlice";
+import { Fade } from "react-awesome-reveal";
 
 export const ModalWindow = () => {
   const dispatch = useDispatch();
@@ -16,15 +17,17 @@ export const ModalWindow = () => {
 
   return (
     <>
-      <div className={styles.overlay} onClick={handleClose} />
-      <div className={styles.modal_window}>
-        <img src={Logo} alt="logo" className={styles.modal_window__logo} />
-        <span className={styles.modal_window__text}>Спасибо за заявку!</span>
-        <span className={styles.modal_window__sub_text}>
-          Наши менеджеры свяжутся с вами в скором времени
-        </span>
-        <Button text="Закрыть" buttonType="filled" onClick={handleClose} />
-      </div>
+      <Fade>
+        <div className={styles.overlay} onClick={handleClose} />
+        <div className={styles.modal_window}>
+          <img src={Logo} alt="logo" className={styles.modal_window__logo} />
+          <span className={styles.modal_window__text}>Спасибо за заявку!</span>
+          <span className={styles.modal_window__sub_text}>
+            Наши менеджеры свяжутся с вами в скором времени
+          </span>
+          <Button text="Закрыть" buttonType="filled" onClick={handleClose} />
+        </div>
+      </Fade>
     </>
   );
 };

@@ -9,7 +9,6 @@ import Contacts from "@widgets/Contacts";
 import Header from "@features/Header";
 import { ModalWindow } from "@entities/ModalWindow";
 import { Provider } from "react-redux";
-import { store } from "../redux/store";
 
 interface RootState {
   modalSlice: {
@@ -24,16 +23,14 @@ const HomePage = () => {
     (state: RootState) => state.modalSlice.isShown
   );
   return (
-    <Provider store={store}>
-      <div style={{ backgroundColor: `rgba(26, 38, 43, ${scrollOpacity})` }}>
-        <Header textColor="" />
-        <MainScreen />
-        <AboutScreen />
-        <Products />
-        <Contacts />
-        {isModalVisible && <ModalWindow />}
-      </div>
-    </Provider>
+    <div style={{ backgroundColor: `rgba(26, 38, 43, ${scrollOpacity})` }}>
+      <Header textColor="" />
+      <MainScreen />
+      <AboutScreen />
+      <Products />
+      <Contacts />
+      {isModalVisible && <ModalWindow />}
+    </div>
   );
 };
 

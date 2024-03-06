@@ -1,10 +1,12 @@
 import React from "react";
 import { SubmitErrorHandler, SubmitHandler, useForm } from "react-hook-form";
-
 import { Input } from "@shared/ui/Input/index";
 import { Button } from "@shared/ui/Button/index";
+import { useSendEmail } from "@shared/lib/hooks/useSendEmail";
+import { useDispatch } from "react-redux";
 
 import styles from "./styles.module.scss";
+import { toggleOnModal } from "../../redux/modalSlice";
 
 interface FormData {
   name: string;
@@ -12,13 +14,8 @@ interface FormData {
 }
 
 function Form() {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  // } = useForm<FormData>({
-  //   defaultValues: {},
-  // });
+  const { register, handleSubmit, errors } = useSendEmail();
+  const dispatch = useDispatch();
 
   const submit: SubmitHandler<FormData> = (data) => {
     console.log(data);
@@ -28,45 +25,52 @@ function Form() {
     console.log(errors);
   };
 
+  const onFormSubmit = (data: any) => {
+    handleSubmit(data);
+    dispatch(toggleOnModal());
+  };
+
   return (
-    <form className={styles.form} onSubmit={handleSubmit(submit, error)}>
+    <form className={styles.form} onSubmit={onFormSubmit}>
       <div className={styles.form__input_name}>
         <Input
+          required
           type="text"
           labelText="Введите ваше имя"
-          // {...register("name", {
-          //   required: "Это поле обязательно к заполнению",
-          //   pattern: {
-          //     value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
-          //     message: "Пожалуйста введите ваше имя правильно",
-          //   },
-          //   minLength: {
-          //     value: 2,
-          //     message: "Имя должно содержать минимум 2 символа",
-          //   },
-          // })}
+          {...register("name", {
+            required: "Это поле обязательно к заполнению",
+            pattern: {
+              value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
+              message: "Пожалуйста введите ваше имя правильно",
+            },
+            minLength: {
+              value: 2,
+              message: "Имя должно содержать минимум 2 символа",
+            },
+          })}
         />
-        {/* {errors.name && (
+        {errors.name && (
           <span className={styles.error}>{errors.name.message}</span>
-        )} */}
+        )}
       </div>
       <div className={styles.form__input_phone}>
         <Input
-          type="text"
+          required
+          type="phone"
           labelText="Ваш номер телефона"
-          // {...register("phone", {
-          //   required: "Это поле обязательно к заполнению",
-          //   pattern: {
-          //     value: /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
-          //     message: "Пожалуйста введите номер телефона правильно",
-          //   },
-          // })}
+          {...register("phone_number", {
+            required: "Это поле обязательно к заполнению",
+            pattern: {
+              value: /^\+?[0-9]{6,14}$/,
+              message: "Пожалуйста введите номер телефона правильно",
+            },
+          })}
         />
-        {/* {errors.phone && (
-          <span className={styles.error}>{errors.phone.message}</span>
-        )} */}
+        {errors.phone_number && (
+          <span className={styles.error}>{errors.phone_number.message}</span>
+        )}
       </div>
-      <Button type="submit" buttonType="filled" text="Отправить" />
+      <Button buttonType="filled" text="Отправить" />
     </form>
   );
 }

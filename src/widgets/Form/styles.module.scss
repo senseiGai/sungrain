@@ -5,7 +5,16 @@
   align-items: center;
   flex-direction: column;
 
+  &__input_name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
   &__input_phone {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     @apply mt-14;
   }
   &__submit_button {

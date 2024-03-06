@@ -5,8 +5,8 @@ export const useCustomLabel = (labelRef: RefObject<HTMLElement>) => {
   const onLabelFocus: React.FocusEventHandler<HTMLInputElement> = (e) => {
     if (labelRef.current) {
       gsap.to(labelRef.current, {
-        bottom: "clamp(16px,1.66656vw,64px)",
-        fontSize: "clamp(8px,0.83328vw,32px)",
+        bottom: "2rem",
+        fontSize: "1rem",
         color: "#d25127",
         duration: 0.5,
         ease: "power3.out",
@@ -18,7 +18,7 @@ export const useCustomLabel = (labelRef: RefObject<HTMLElement>) => {
     if (labelRef.current && e.target.value === "") {
       gsap.to(labelRef.current, {
         bottom: "4px",
-        fontSize: "clamp(9px,0.93744vw,36px)",
+        fontSize: "1rem",
         color: "#d25127",
         duration: 0.5,
         ease: "power3.out",
