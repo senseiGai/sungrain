@@ -39,6 +39,7 @@
     line-height: clamp(14.6px, 2.8515625vw, 58.4px);
   }
   .paragraph--card {
+    width: clamp(125px, 24.4140625vw, 500px);
     text-align: left;
     color: white;
     font-size: clamp(9px, 1.7578125vw, 36px);
