@@ -87,7 +87,55 @@
       }
     }
     &__flower_cards {
-      // margin-top: clamp(275px, 128.50199999999998vw, 1100px);
+      @apply mt-36;
+      display: flex;
+      flex-direction: column;
+      height: clamp(394px, 184.10832vw, 1576px);
+    }
+    &__flower_card {
+      @apply mt-12;
+      width: clamp(190px, 88.7832vw, 760px);
+    }
+    &__card_text_section {
+      @apply p-5;
+    }
+    &__card_text {
+      font-size: clamp(16px, 7.47648vw, 64px);
+    }
+    &__card_text_hidden {
+      opacity: 0;
+      animation: fadeIn 7s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .about {
+    margin-top: clamp(125px, 24.4140625vw, 500px);
+    width: 100%;
+    &__content {
+      width: 90%;
+      height: 90vh;
+    }
+    &__text {
+      @apply mt-16;
+      flex-direction: column;
+      text-align: center;
+      &_paragraph {
+        @apply mt-4;
+        text-align: center;
+        width: clamp(185px, 86.4468vw, 740px);
+      }
+    }
+    &__flower_cards {
       @apply mt-36;
       display: flex;
       flex-direction: column;

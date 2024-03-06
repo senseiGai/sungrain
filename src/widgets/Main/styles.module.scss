@@ -32,22 +32,19 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  body {
-    border: 2px solid red;
-  }
-
   .main {
     width: 100%;
     display: flex;
     justify-content: center;
     &__content {
       width: 90%;
-      height: 75vh;
+      height: 60vh;
       @apply mb-52;
     }
     &__content_logo {
-      @apply mt-16;
-      width: 1000px;
+      @apply mt-20;
+      width: clamp(250px, 39.0625vw, 1000px);
+      height: clamp(225px, 43.9453125vw, 900px);
     }
   }
 }
