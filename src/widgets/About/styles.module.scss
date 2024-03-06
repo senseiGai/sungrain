@@ -132,24 +132,24 @@
       &_paragraph {
         @apply mt-4;
         text-align: center;
-        width: clamp(185px, 86.4468vw, 740px);
+        width: clamp(200px, 39.0625vw, 800px);
       }
     }
     &__flower_cards {
-      @apply mt-36;
+      // @apply mt-36;
       display: flex;
-      flex-direction: column;
-      height: clamp(394px, 184.10832vw, 1576px);
+      flex-direction: row;
+      height: clamp(125px, 24.4140625vw, 500px);
     }
     &__flower_card {
       @apply mt-12;
-      width: clamp(190px, 88.7832vw, 760px);
+      width: clamp(150px, 29.296875vw, 600px);
     }
     &__card_text_section {
       @apply p-5;
     }
     &__card_text {
-      font-size: clamp(16px, 7.47648vw, 64px);
+      font-size: clamp(16px, 3.125vw, 64px);
     }
     &__card_text_hidden {
       opacity: 0;
