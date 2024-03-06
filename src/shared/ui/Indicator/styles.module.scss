@@ -140,3 +140,19 @@
     font-size: clamp(7.5px, 3.5046vw, 30px);
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  %indicator--common {
+    width: clamp(200px, 39.0625vw, 800px);
+    height: clamp(20px, 3.90625vw, 80px);
+  }
+
+  .main_text {
+    color: #223137;
+    font-size: clamp(10px, 1.953125vw, 40px);
+  }
+
+  .second_text {
+    font-size: clamp(7.5px, 1.46484375vw, 30px);
+  }
+}

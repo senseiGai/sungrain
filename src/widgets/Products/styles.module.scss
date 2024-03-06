@@ -28,3 +28,16 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .products {
+    width: 100%;
+
+    &__content {
+      width: 90%;
+    }
+    &__flour_card {
+      margin-top: clamp(150px, 29.296875vw, 600px);
+    }
+  }
+}
