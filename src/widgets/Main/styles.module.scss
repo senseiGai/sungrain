@@ -12,7 +12,7 @@
   &__content_logo {
     display: flex;
     justify-content: center;
-    @apply mt-16;
+    @apply mt-36;
     width: clamp(250px, 26.04vw, 1000px);
     height: clamp(225px, 23.436vw, 900px);
   }
@@ -26,7 +26,28 @@
     &__content {
       width: 90%;
       height: 75vh;
-      @apply mt-20;
+      @apply mb-52;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    border: 2px solid red;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__content {
+      width: 90%;
+      height: 75vh;
+      @apply mb-52;
+    }
+    &__content_logo {
+      @apply mt-16;
+      width: 1000px;
     }
   }
 }

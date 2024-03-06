@@ -1,9 +1,18 @@
+import { RefObject } from "react";
+import gsap from "gsap";
+
+interface LabelStyles {
+  bottom: string;
+  fontSize: string;
+  color: string;
+}
+
 export const useCustomLabel = (
-  labelRef: RefObject<HTMLLabelElement>,
-  focusStyles: Record<string, string>,
-  blurStyles: Record<string, string>
+  labelRef: RefObject<HTMLElement>,
+  focusStyles: LabelStyles,
+  blurStyles: LabelStyles
 ) => {
-  const onLabelFocus: React.FocusEventHandler<HTMLInputElement> = (e) => {
+  const onLabelFocus: React.FocusEventHandler<HTMLInputElement> = () => {
     if (labelRef.current) {
       gsap.to(labelRef.current, {
         ...focusStyles,

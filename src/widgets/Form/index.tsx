@@ -32,6 +32,7 @@ function Form() {
     <form className={styles.form} onSubmit={handleSubmit(submit, error)}>
       <div className={styles.form__input_name}>
         <Input
+          type="text"
           labelText="Введите ваше имя"
           {...register("name", {
             required: "Это поле обязательно к заполнению",
@@ -51,6 +52,7 @@ function Form() {
       </div>
       <div className={styles.form__input_phone}>
         <Input
+          type="text"
           labelText="Ваш номер телефона"
           {...register("phone", {
             required: "Это поле обязательно к заполнению",
