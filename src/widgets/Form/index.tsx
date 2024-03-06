@@ -12,13 +12,13 @@ interface FormData {
 }
 
 function Form() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormData>({
-    defaultValues: {},
-  });
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm<FormData>({
+  //   defaultValues: {},
+  // });
 
   const submit: SubmitHandler<FormData> = (data) => {
     console.log(data);
@@ -34,37 +34,37 @@ function Form() {
         <Input
           type="text"
           labelText="Введите ваше имя"
-          {...register("name", {
-            required: "Это поле обязательно к заполнению",
-            pattern: {
-              value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
-              message: "Пожалуйста введите ваше имя правильно",
-            },
-            minLength: {
-              value: 2,
-              message: "Имя должно содержать минимум 2 символа",
-            },
-          })}
+          // {...register("name", {
+          //   required: "Это поле обязательно к заполнению",
+          //   pattern: {
+          //     value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
+          //     message: "Пожалуйста введите ваше имя правильно",
+          //   },
+          //   minLength: {
+          //     value: 2,
+          //     message: "Имя должно содержать минимум 2 символа",
+          //   },
+          // })}
         />
-        {errors.name && (
+        {/* {errors.name && (
           <span className={styles.error}>{errors.name.message}</span>
-        )}
+        )} */}
       </div>
       <div className={styles.form__input_phone}>
         <Input
           type="text"
           labelText="Ваш номер телефона"
-          {...register("phone", {
-            required: "Это поле обязательно к заполнению",
-            pattern: {
-              value: /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
-              message: "Пожалуйста введите номер телефона правильно",
-            },
-          })}
+          // {...register("phone", {
+          //   required: "Это поле обязательно к заполнению",
+          //   pattern: {
+          //     value: /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
+          //     message: "Пожалуйста введите номер телефона правильно",
+          //   },
+          // })}
         />
-        {errors.phone && (
+        {/* {errors.phone && (
           <span className={styles.error}>{errors.phone.message}</span>
-        )}
+        )} */}
       </div>
       <Button type="submit" buttonType="filled" text="Отправить" />
     </form>

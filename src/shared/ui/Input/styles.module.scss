@@ -27,21 +27,16 @@
     color: #fff;
   }
 
-  $input-focus-color: blue;
-  $input-focus-font-size: 16px;
-  $input-blur-color: gray;
-  $input-blur-font-size: 14px;
-}
+  @media only screen and (max-width: 767px) {
+    .input_container {
+      width: clamp(145px, 67.7556vw, 580px);
 
-@media only screen and (max-width: 767px) {
-  .input_container {
-    width: clamp(145px, 67.7556vw, 580px);
-
-    &__label {
-      font-size: clamp(10px, 4.6728vw, 40px);
-    }
-    &__input {
-      font-size: clamp(10px, 4.6728vw, 40px);
+      &__label {
+        font-size: clamp(10px, 4.6728vw, 40px);
+      }
+      &__input {
+        font-size: clamp(10px, 4.6728vw, 40px);
+      }
     }
   }
 }
