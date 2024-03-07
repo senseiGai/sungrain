@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow-x: hidden;
   }
   &__flour_card {
     @apply mt-56;

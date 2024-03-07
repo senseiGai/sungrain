@@ -11,6 +11,10 @@
   cursor: none;
 }
 
+#root {
+  overflow-x: hidden !important;
+}
+
 button {
   cursor: none;
 }

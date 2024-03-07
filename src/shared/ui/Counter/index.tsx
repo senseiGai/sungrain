@@ -2,20 +2,17 @@ import React, { useRef, useState, useEffect } from "react";
 import CountUp from "react-countup";
 
 import styles from "./styles.module.scss";
-// import { text } from "stream/consumers";
 
 interface CounterProps {
   duration: number;
   end: number;
   text: string;
-  marginTop: string;
 }
 
 export const Counter: React.FC<CounterProps> = ({
   duration,
   end,
   //   text,
-  marginTop,
 }) => {
   const countUpRef = useRef(null);
   const [startCount, setStartCount] = useState(false);
@@ -43,10 +40,7 @@ export const Counter: React.FC<CounterProps> = ({
   }, []);
 
   return (
-    <div
-      className={`${marginTop} ${styles.counter_container}`}
-      ref={countUpRef}
-    >
+    <div className={`${styles.counter_container}`} ref={countUpRef}>
       {startCount ? (
         <CountUp
           className={styles.counter_container__counter}
