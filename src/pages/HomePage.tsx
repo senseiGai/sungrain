@@ -8,6 +8,7 @@ import AboutScreen from "@widgets/About";
 import Products from "@widgets/Products";
 import Contacts from "@widgets/Contacts";
 import Header from "@features/Header";
+import { Footer } from "@features/Footer";
 
 interface RootState {
   modalSlice: {
@@ -29,6 +30,7 @@ const HomePage = () => {
       <Products />
       <Contacts />
       {isModalVisible && <ModalWindow />}
+      <Footer />
     </div>
   );
 };

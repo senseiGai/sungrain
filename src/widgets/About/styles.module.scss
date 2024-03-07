@@ -22,9 +22,10 @@
     align-items: center;
     flex-direction: column;
     &_paragraph {
+      width: 60%;
+      margin: auto;
       @apply mt-4;
       text-align: center;
-      width: clamp(220.5px, 22.96728vw, 882px);
       height: clamp(101.5px, 10.57224vw, 406px);
     }
   }
@@ -75,6 +76,7 @@
     width: 100%;
     &__content {
       width: 90%;
+      height: 150vh !important;
     }
     &__text {
       @apply mt-16;

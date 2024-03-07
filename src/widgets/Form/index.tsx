@@ -17,14 +17,6 @@ function Form() {
   const { register, handleSubmit, errors } = useSendEmail();
   const dispatch = useDispatch();
 
-  const submit: SubmitHandler<FormData> = (data) => {
-    console.log(data);
-  };
-
-  const error: SubmitErrorHandler<FormData> = (errors) => {
-    console.log(errors);
-  };
-
   const onFormSubmit = (data: any) => {
     handleSubmit(data);
     dispatch(toggleOnModal());
@@ -35,6 +27,7 @@ function Form() {
       <div className={styles.form__input_name}>
         <Input
           required
+          margin="mt-8"
           type="text"
           labelText="Введите ваше имя"
           {...register("name", {

@@ -4,13 +4,14 @@ import ProductCard from "@entities/ProductCard/index";
 
 import styles from "../Products/styles.module.scss";
 
-import Russian from "../../assets/Products/russian.webp";
-import Golden50 from "../../assets/Products/golden50.webp";
-import GoldenCake from "../../assets/Products/goldencake.webp";
-import Golden2 from "../../assets/Products/golden2.webp";
-import Golden25 from "../../assets/Products/golden25.webp";
-import Pizza from "../../assets/Products/pizza.webp";
-import King from "@assets/Products/IMG_0029_1_2.webp";
+import Russian from "@assets/Products/russian.webp";
+import Golden50 from "@assets/Products/golden50.webp";
+import GoldenCake from "@assets/Products/goldencake.webp";
+import Golden2 from "@assets/Products/golden2.webp";
+import Golden25 from "@assets/Products/golden25.webp";
+import Pizza from "@assets/Products/pizza.webp";
+import King from "@assets/Products/IMG_0029_1_2 1.webp";
+
 import { indicatorsContent } from "@shared/lib/content/indicatorsContent";
 
 function products() {
@@ -23,7 +24,7 @@ function products() {
     Pizza,
     King,
   ];
-  const imgTypes = ["default", "special", "king"];
+  const imgTypes = ["default"];
   const prices = [11500, 14500, 2900, 700, 10000, 4000, 8000];
 
   return (

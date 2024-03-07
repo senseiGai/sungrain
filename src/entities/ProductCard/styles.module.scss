@@ -6,23 +6,9 @@
   .default {
     position: absolute;
     top: 0;
-    width: clamp(550px, 57.288000000000004vw, 2200px);
-    height: clamp(470px, 48.9552vw, 1880px);
+    width: clamp(400px, 41.664vw, 1600px);
+    height: clamp(400px, 41.664vw, 1600px);
     left: clamp(415px, 43.2264vw, 1660px);
-  }
-  .special {
-    position: absolute;
-    top: 0;
-    width: clamp(400px, 41.664vw, 1600px);
-    height: clamp(470px, 48.9552vw, 1880px);
-    left: clamp(512.5px, 53.382vw, 2050px);
-  }
-  .king {
-    position: absolute;
-    top: 0;
-    width: clamp(400px, 41.664vw, 1600px);
-    height: clamp(200px, 93.45599999999999vw, 800px);
-    left: clamp(512.5px, 53.382vw, 2050px);
   }
 }
 
@@ -34,25 +20,11 @@
     justify-content: center;
 
     .default {
-      position: absolute;
-      top: clamp(330px, 154.20239999999998vw, 1320px);
+      position: static !important;
       width: clamp(200px, 93.45599999999999vw, 800px);
       height: clamp(200px, 93.45599999999999vw, 800px);
       left: -0.85px;
-    }
-    .special {
-      position: absolute;
-      top: clamp(330px, 154.20239999999998vw, 1320px);
-      width: clamp(200px, 93.45599999999999vw, 800px);
-      height: clamp(200px, 93.45599999999999vw, 800px);
-      left: -0.85px;
-    }
-    .king {
-      position: absolute;
-      top: clamp(270px, 126.1656vw, 1080px);
-      width: clamp(200px, 93.45599999999999vw, 800px);
-      height: clamp(200px, 93.45599999999999vw, 800px);
-      left: -0.85px;
+      @apply mt-8;
     }
   }
 }
