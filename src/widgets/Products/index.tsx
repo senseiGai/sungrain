@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProductCard from "@entities/ProductCard/index";
+import { Counter } from "@shared/ui/Counter";
 
 import styles from "../Products/styles.module.scss";
 
@@ -87,6 +88,7 @@ function products() {
                 },
               ]}
             />
+            <Counter duration={1.4} end={11500} text="тг" marginTop="mt-5" />
           </div>
           <div className={styles.products__flour_card}>
             <ProductCard
@@ -158,6 +160,7 @@ function products() {
                 },
               ]}
             />
+            <Counter duration={1.4} end={14500} text="тг" marginTop="mt-5" />
           </div>
           <div className={styles.products__flour_card}>
             <ProductCard
@@ -229,6 +232,7 @@ function products() {
                 },
               ]}
             />
+            <Counter duration={1.4} end={2900} text="тг" marginTop="mt-5" />
           </div>
           <div className={styles.products__flour_card}>
             <ProductCard
@@ -300,6 +304,7 @@ function products() {
                 },
               ]}
             />
+            <Counter duration={1.4} end={700} text="тг" marginTop="mt-5" />
           </div>
           <div className={styles.products__flour_card}>
             <ProductCard
@@ -371,6 +376,7 @@ function products() {
                 },
               ]}
             />
+            <Counter duration={1.4} end={10000} text="тг" marginTop="mt-5" />
           </div>
           <div className={styles.products__flour_card}>
             <ProductCard
@@ -442,6 +448,7 @@ function products() {
                 },
               ]}
             />
+            <Counter duration={1.4} end={4000} text="тг" marginTop="mt-5" />
           </div>
           <div className={styles.products__flour_card}>
             <ProductCard
@@ -495,6 +502,7 @@ function products() {
                 },
               ]}
             />
+            <Counter duration={1.4} end={8000} text="тг" marginTop="mt-5" />
           </div>
         </div>
       </div>
