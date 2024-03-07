@@ -9,11 +9,7 @@ interface CounterProps {
   text: string;
 }
 
-export const Counter: React.FC<CounterProps> = ({
-  duration,
-  end,
-  //   text,
-}) => {
+export const Counter: React.FC<CounterProps> = ({ duration, end, text }) => {
   const countUpRef = useRef(null);
   const [startCount, setStartCount] = useState(false);
 
@@ -42,11 +38,16 @@ export const Counter: React.FC<CounterProps> = ({
   return (
     <div className={`${styles.counter_container}`} ref={countUpRef}>
       {startCount ? (
-        <CountUp
-          className={styles.counter_container__counter}
-          end={end}
-          duration={duration}
-        />
+        <>
+          <CountUp
+            className={styles.counter_container__counter}
+            end={end}
+            duration={duration}
+          />
+          <span className={`ml-3 ${styles.counter_container__counter}`}>
+            {text}
+          </span>
+        </>
       ) : (
         <span className={styles.counter_container__counter}>0</span>
       )}

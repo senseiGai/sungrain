@@ -6,7 +6,7 @@ import { Counter } from "@shared/ui/Counter";
 
 import styles from "./styles.module.scss";
 
-interface ProductData {
+export interface ProductData {
   mainText: string;
   secondText: string;
   indicatorType:
@@ -32,10 +32,11 @@ interface ProductData {
 }
 
 interface ProductCardProps {
-  indicatorsData: ProductData[];
+  indicatorsData: any;
   src: string;
   end: number;
-  imgType: "default" | "special" | "king";
+  imgType: string | "default" | "special" | "king";
+  margin?: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -43,14 +44,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
   src,
   imgType,
   end,
+  margin,
 }) => {
   const imgClass = `${styles.img} ${styles[imgType]}`;
 
   return (
     <>
-      <section className={styles.card}>
+      <section className={`${styles.card} ${margin}`}>
         <Heading headingType="secondary" text={indicatorsData[0].title} />
-        {indicatorsData.map((indicator, index) => (
+        {indicatorsData.map((indicator: any, index: number) => (
           <Indicator key={index} {...indicator} />
         ))}
         <img className={imgClass} src={src} alt="flour picture" />

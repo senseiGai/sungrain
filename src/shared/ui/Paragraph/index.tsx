@@ -2,7 +2,7 @@ import styles from "../Paragraph/styles.module.scss";
 
 interface ParagraphProps {
   id?: string;
-  text: string;
+  text: string | undefined;
   margin?: string;
   paragraphType: "default" | "card";
 }

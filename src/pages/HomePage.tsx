@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { ModalWindow } from "@entities/ModalWindow";
 import useScrollOpacity from "@shared/lib/hooks/useScrollOpacity";
 
 import MainScreen from "@widgets/Main";
@@ -7,8 +8,6 @@ import AboutScreen from "@widgets/About";
 import Products from "@widgets/Products";
 import Contacts from "@widgets/Contacts";
 import Header from "@features/Header";
-import { ModalWindow } from "@entities/ModalWindow";
-import { Provider } from "react-redux";
 
 interface RootState {
   modalSlice: {

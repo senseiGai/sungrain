@@ -1,5 +1,7 @@
 .card {
   position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   .default {
     position: absolute;

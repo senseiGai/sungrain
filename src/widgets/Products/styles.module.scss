@@ -20,7 +20,7 @@
 @media only screen and (max-width: 767px) {
   .products {
     width: 100%;
-    margin-top: clamp(450px, 210.27599999999998vw, 1800px);
+    // margin-top: clamp(450px, 210.27599999999998vw, 1800px);
     &__content {
       width: 90%;
     }

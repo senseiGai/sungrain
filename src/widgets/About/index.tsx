@@ -10,6 +10,7 @@ import Fire from "@assets/Cards/photo_03.webp";
 import Bread from "@assets/Cards/photo_01.webp";
 
 import styles from "../About/styles.module.scss";
+import { AboutCard } from "@shared/ui/AboutCard";
 
 function AboutScreen() {
   return (
@@ -43,79 +44,32 @@ function AboutScreen() {
           </Fade>
         </div>
       </div>
-      <div className={styles.about__flower_cards}>
+      <div className={`${styles.about__flower_cards} flex gap-16`}>
         <Fade direction="up" triggerOnce className={styles.fade}>
-          <div className={styles.about__flower_card} id="hands">
-            <img
-              src={Hands}
-              alt="picture"
-              className={styles.about__flower_picture}
-            />
-            <section className={styles.about__card_text_section}>
-              <p className={styles.about__card_text}>МУКА</p>
-              <p className={styles.about__card_text}>для лепки</p>
-              <Separator separatorType="dark-red" margin="mt-4" />
-              <div className={styles.about__card_text_hidden}>
-                <Paragraph
-                  paragraphType="card"
-                  text="Откройте для себя секрет идеального вкуса и текстуры..."
-                  margin="mt-8"
-                />
-              </div>
-            </section>
-          </div>
+          <AboutCard
+            img={Hands}
+            name="Мука"
+            cardType="Для лепки"
+            textFirst="Откройте для себя секрет идеального вкуса и текстуры..."
+          />
         </Fade>
         <Fade direction="up" delay={200} triggerOnce className="fade">
-          <div className={styles.about__flower_card} id="fire">
-            <img
-              src={Fire}
-              alt="picture"
-              className={styles.about__flower_picture}
-            />
-            <section className={styles.about__card_text_section}>
-              <p className={styles.about__card_text}>МУКА</p>
-              <p className={styles.about__card_text}>для пиццы</p>
-              <Separator separatorType="yellow" margin="mt-4" />
-              <div className={styles.about__card_text_hidden}>
-                <Paragraph
-                  paragraphType="card"
-                  text="Для настоящих ценителей пиццы!"
-                  margin="mt-8"
-                />
-                <Paragraph
-                  paragraphType="card"
-                  text="Наша специальная мука создана для идеального теста, которос не только легко раскатывается, но и придает вашей пицце неповторимый вкус и хрустящий край."
-                  margin="mt-4"
-                />
-              </div>
-            </section>
-          </div>
+          <AboutCard
+            img={Fire}
+            name="МУКА"
+            cardType="Для пиццы"
+            textFirst="Для настоящих ценителей пиццы!"
+            textSecond="Наша специальная мука создана для идеального теста, которос не только легко раскатывается, но и придает вашей пицце неповторимый вкус и хрустящий край."
+          />
         </Fade>
         <Fade direction="up" delay={400} triggerOnce>
-          <div className={styles.about__flower_card} id="bread">
-            <img
-              src={Bread}
-              alt="picture"
-              className={styles.about__flower_picture}
-            />
-            <section className={styles.about__card_text_section}>
-              <p className={styles.about__card_text}>МУКА</p>
-              <p className={styles.about__card_text}>для выпечки</p>
-              <Separator separatorType="orange" margin="mt-4" />
-              <div className={styles.about__card_text_hidden}>
-                <Paragraph
-                  paragraphType="card"
-                  text="Отличный хлеб начинается с отличной муки!"
-                  margin="mt-8"
-                />
-                <Paragraph
-                  paragraphType="card"
-                  text="Наша мука для выпечки обеспечит ваши рецепты нежным вкусом и идеальной текстурой."
-                  margin="mt-4"
-                />
-              </div>
-            </section>
-          </div>
+          <AboutCard
+            img={Bread}
+            name="МУКА"
+            cardType="Для выпечки"
+            textFirst="Отличный хлеб начинается с отличной муки!"
+            textSecond="Наша мука для выпечки обеспечит ваши рецепты нежным вкусом и идеальной текстурой."
+          />
         </Fade>
       </div>
     </section>
