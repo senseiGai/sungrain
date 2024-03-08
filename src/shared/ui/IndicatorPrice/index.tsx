@@ -2,38 +2,19 @@ import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 import styles from "../Indicator/styles.module.scss";
+import { Counter } from "../Counter/index";
 
-interface IndicatorProps {
-  mainText: string;
-  secondText?: string;
+interface IndicatorPriceProps {
   margin?: string;
-  indicatorType:
-    | "yellow"
-    | "darken-yellow"
-    | "orange"
-    | "darken-orange"
-    | "light-red"
-    | "red"
-    | "darken-red"
-    | "dark-green";
-  indicatorLight:
-    | "light-yellow"
-    | "light-darken-yellow"
-    | "light-orange"
-    | "light-darken-orange"
-    | "light-light-red"
-    | "light-red"
-    | "light-darken-red"
-    | "light-green";
+  indicatorType: "dark-green";
+  indicatorLight: "light-green";
   fillWidthPercentage: number;
-  counterText: string;
-  counterDuration: number;
+  end: number;
 }
 
-export const Indicator: React.FC<IndicatorProps> = ({
-  mainText,
-  secondText,
+export const IndicatorPrice: React.FC<IndicatorPriceProps> = ({
   margin,
+  end,
   indicatorType,
   indicatorLight,
   fillWidthPercentage,
@@ -77,11 +58,10 @@ export const Indicator: React.FC<IndicatorProps> = ({
   return (
     <div ref={ref} className={indicatorClass} {...rest}>
       <div className={indicatorLightClass} style={fillStyle}>
-        <span className={styles.main_text} style={textStyle}>
-          {mainText}
+        <span className={styles.price_text} style={textStyle}>
+          <Counter duration={1.4} end={end} text="тг" />
         </span>
       </div>
-      <span className={styles.second_text}>{secondText}</span>
     </div>
   );
 };

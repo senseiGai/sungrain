@@ -1,7 +1,5 @@
 import React from "react";
-
 import ProductCard from "@entities/ProductCard/index";
-
 import styles from "../Products/styles.module.scss";
 
 import Russian from "@assets/Products/22.webp";
@@ -11,10 +9,9 @@ import Golden2 from "@assets/Products/Монтажная область 1.webp";
 import Golden25 from "@assets/Products/Монтажная область 2.webp";
 import Pizza from "@assets/Products/Монтажная область 3.webp";
 import King from "@assets/Products/каша.webp";
-
 import { indicatorsContent } from "@shared/lib/content/indicatorsContent";
 
-function products() {
+function Products() {
   const productImages = [
     Russian,
     Golden50,
@@ -26,6 +23,20 @@ function products() {
   ];
   const imgTypes = ["default"];
   const prices = [11500, 14500, 2900, 700, 10000, 4000, 8000];
+
+  const minPrice = Math.min(...prices);
+  const maxPrice = Math.max(...prices);
+  const minFillPercentage = 30;
+  const maxFillPercentage = 100;
+
+  const fillWidthPercentages = prices.map((price) => {
+    if (maxPrice - minPrice === 0) return minFillPercentage;
+    const normalizedPrice = (price - minPrice) / (maxPrice - minPrice);
+    return (
+      minFillPercentage +
+      normalizedPrice * (maxFillPercentage - minFillPercentage)
+    );
+  });
 
   return (
     <section className={styles.products}>
@@ -39,6 +50,7 @@ function products() {
               src={productImages[index % productImages.length]}
               imgType={imgTypes[index % imgTypes.length]}
               end={prices[index % prices.length]}
+              fillWidthPercentage={fillWidthPercentages[index % prices.length]}
             />
           ))}
         </div>
@@ -47,4 +59,4 @@ function products() {
   );
 }
 
-export default products;
+export default Products;

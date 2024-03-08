@@ -2,7 +2,7 @@ import React from "react";
 
 import { Heading } from "@shared/ui/Heading";
 import { Indicator } from "@shared/ui/Indicator";
-import { Counter } from "@shared/ui/Counter";
+import { IndicatorPrice } from "@shared/ui/IndicatorPrice";
 
 import styles from "./styles.module.scss";
 
@@ -28,15 +28,15 @@ export interface ProductData {
   fillWidthPercentage: number;
   margin: string;
   title: string;
-  end: number;
 }
 
 interface ProductCardProps {
   indicatorsData: any;
-  src: string;
   end: number;
+  src: string;
   imgType: string | "default";
   margin?: string;
+  fillWidthPercentage: number;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -45,6 +45,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   imgType,
   end,
   margin,
+  fillWidthPercentage,
 }) => {
   const imgClass = `${styles.img} ${styles[imgType]}`;
 
@@ -56,13 +57,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <Indicator key={index} {...indicator} />
         ))}
         <img className={imgClass} src={src} alt="flour picture" />
-        <Indicator
-          indicatorType="dark-green"
+        <IndicatorPrice
+          end={end}
           indicatorLight="light-green"
-          mainText=""
-          secondText=""
-          fillWidthPercentage={40}
-          margin="mt-12"
+          indicatorType="dark-green"
+          fillWidthPercentage={fillWidthPercentage}
+          margin="mt-10"
         />
       </section>
     </>
