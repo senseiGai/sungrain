@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Heading } from "@shared/ui/Heading";
+import { BigText } from "@shared/ui/BigText";
 import { Indicator } from "@shared/ui/Indicator";
 import { IndicatorPrice } from "@shared/ui/IndicatorPrice";
 
@@ -52,7 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <>
       <section className={`${styles.card} ${margin}`}>
-        <Heading headingType="secondary" text={indicatorsData[0].title} />
+        <BigText bigTextType="secondary" text={indicatorsData[0].title} />
         {indicatorsData.map((indicator: any, index: number) => (
           <Indicator key={index} {...indicator} />
         ))}

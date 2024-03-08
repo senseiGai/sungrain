@@ -1,6 +1,6 @@
 import React from "react";
 
-import sparkLogo from "@assets/spark_logo.svg";
+import sparkLogo from "@assets/Logo/spark_logo.svg";
 
 import { ContactLink } from "@shared/ui/ContactLink";
 import { faAt } from "@fortawesome/free-solid-svg-icons/faAt";

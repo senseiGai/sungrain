@@ -3,7 +3,7 @@ import styles from "../Heading/styles.module.scss";
 interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   text: string;
   margin?: string;
-  headingType: "primary" | "secondary" | "secondary--small";
+  headingType: "primary";
 }
 
 export const Heading: React.FC<HeadingProps> = ({
