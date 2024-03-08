@@ -56,7 +56,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <Indicator key={index} {...indicator} />
         ))}
         <img className={imgClass} src={src} alt="flour picture" />
-        <Counter duration={1.4} end={end} text="тг" />
+        <Indicator
+          indicatorType="dark-green"
+          indicatorLight="light-green"
+          mainText=""
+          secondText=""
+          fillWidthPercentage={40}
+          margin="mt-12"
+        />
       </section>
     </>
   );

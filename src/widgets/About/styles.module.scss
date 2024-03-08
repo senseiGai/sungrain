@@ -53,13 +53,8 @@
     @apply p-6;
   }
 
-  &__card_text_hidden {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .about__flower_card:hover .about__card_text_hidden {
-    opacity: 1;
+  &__card_text_card {
+    max-width: 90%;
   }
 
   &__card_text {

@@ -7,6 +7,7 @@ interface IndicatorProps {
   mainText: string;
   secondText: string;
   margin?: string;
+  marginRight?: string;
   indicatorType:
     | "yellow"
     | "darken-yellow"
@@ -14,7 +15,8 @@ interface IndicatorProps {
     | "darken-orange"
     | "light-red"
     | "red"
-    | "darken-red";
+    | "darken-red"
+    | "dark-green";
   indicatorLight:
     | "light-yellow"
     | "light-darken-yellow"
@@ -22,7 +24,8 @@ interface IndicatorProps {
     | "light-darken-orange"
     | "light-light-red"
     | "light-red"
-    | "light-darken-red";
+    | "light-darken-red"
+    | "light-green";
   fillWidthPercentage: number;
 }
 
@@ -64,7 +67,10 @@ export const Indicator: React.FC<IndicatorProps> = ({
     : { width: "0%" };
 
   const textStyle = isTextVisible
-    ? { opacity: 1, transition: "opacity 0.3s ease-in-out" }
+    ? {
+        opacity: 1,
+        transition: "opacity 0.3s ease-in-out",
+      }
     : { opacity: 0 };
 
   return (
