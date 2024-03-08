@@ -56,7 +56,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
         {indicatorsData.map((indicator: any, index: number) => (
           <Indicator key={index} {...indicator} />
         ))}
-        <img className={imgClass} src={src} alt="flour picture" />
         <IndicatorPrice
           end={end}
           indicatorLight="light-green"
@@ -64,6 +63,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           fillWidthPercentage={fillWidthPercentage}
           margin="mt-10"
         />
+        <img className={imgClass} src={src} alt="flour picture" />
       </section>
     </>
   );

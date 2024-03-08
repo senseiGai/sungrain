@@ -39,7 +39,7 @@ function Products() {
   });
 
   return (
-    <section className={styles.products}>
+    <section className={styles.products} id="products">
       <div className={styles.products__content}>
         <div className={styles.products__flour}>
           {indicatorsContent.map((product, index) => (

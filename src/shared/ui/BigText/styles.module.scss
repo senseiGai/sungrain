@@ -1,0 +1,48 @@
+%bigtext-common {
+  font-weight: 800;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigtext--secondary {
+  font-weight: 800;
+  text-transform: uppercase;
+  @apply text-white;
+  font-size: clamp(30px, 3.1248vw, 120px);
+  width: 45%;
+}
+
+.bigtext--secondary--small {
+  @extend %bigtext-common;
+  @apply text-white;
+  font-size: clamp(17.5px, 1.8228vw, 70px);
+}
+
+@media only screen and (max-width: 767px) {
+  .bigtext--secondary {
+    font-size: clamp(15px, 7.0092vw, 60px);
+    width: 100%;
+  }
+
+  .bigtext--secondary--small {
+    @extend %bigtext-common;
+    @apply text-white;
+    font-size: clamp(14px, 6.541919999999999vw, 56px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .bigtext--secondary {
+    font-size: clamp(18px, 3.515625vw, 72px);
+    width: 50%;
+  }
+
+  .bigtext--secondary--small {
+    @apply text-white;
+    font-size: clamp(20px, 3.90625vw, 80px);
+  }
+}

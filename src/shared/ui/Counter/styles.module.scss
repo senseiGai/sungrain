@@ -6,7 +6,7 @@
 
   &__counter {
     @apply pb-7;
-    font-size: clamp(15px, 1.5624vw, 60px);
+    font-size: clamp(14px, 1.45824vw, 56px);
     font-style: normal;
     font-weight: 600;
     line-height: 141.412%;
@@ -25,5 +25,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &__counter {
+      @apply pt-3;
+      font-size: clamp(10px, 4.6728vw, 40px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 141.412%;
+      @apply text-white;
+    }
   }
 }

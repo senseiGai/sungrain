@@ -26,7 +26,7 @@ export const AboutCard: React.FC<BreadCardProps> = ({
         <p className={styles.about__card_text}>{name}</p>
         <p className={styles.about__card_text}>{cardType}</p>
         <Separator separatorType="orange" margin="mt-4" />
-        <div className={styles.about__card_text_hidden}>
+        <div className={styles.about__card_text}>
           <Paragraph paragraphType="card" text={textFirst} margin="mt-8" />
           <Paragraph paragraphType="card" text={textSecond} margin="mt-4" />
         </div>

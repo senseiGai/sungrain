@@ -14,36 +14,11 @@
   font-size: clamp(30px, 3.1248vw, 120px);
 }
 
-.heading--secondary {
-  font-weight: 800;
-  text-transform: uppercase;
-  @apply text-white;
-  font-size: clamp(30px, 3.1248vw, 120px);
-  width: 45%;
-}
-
-.heading--secondary--small {
-  @extend %heading-common;
-  @apply text-white;
-  font-size: clamp(17.5px, 1.8228vw, 70px);
-}
-
 @media only screen and (max-width: 767px) {
   .heading--primary {
     @extend %heading-common;
     @apply text-primary-red-text;
     font-size: clamp(20px, 9.3456vw, 80px);
-  }
-
-  .heading--secondary {
-    font-size: clamp(15px, 7.0092vw, 60px);
-    width: 100%;
-  }
-
-  .heading--secondary--small {
-    @extend %heading-common;
-    @apply text-white;
-    font-size: clamp(14px, 6.541919999999999vw, 56px);
   }
 }
 
@@ -51,15 +26,5 @@
   .heading--primary {
     @apply text-primary-red-text;
     font-size: clamp(28px, 5.46875vw, 112px);
-  }
-
-  .heading--secondary {
-    font-size: clamp(18px, 3.515625vw, 72px);
-    width: 50%;
-  }
-
-  .heading--secondary--small {
-    @apply text-white;
-    font-size: clamp(20px, 3.90625vw, 80px);
   }
 }

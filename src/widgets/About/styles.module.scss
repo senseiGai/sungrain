@@ -38,7 +38,6 @@
   }
   &__flower_card {
     position: relative;
-    width: clamp(203.5px, 21.19656vw, 814px);
     background-position: center;
     background-size: cover;
   }
@@ -54,7 +53,7 @@
   }
 
   &__card_text_card {
-    max-width: 90%;
+    width: clamp(175px, 18.228vw, 700px);
   }
 
   &__card_text {
@@ -99,17 +98,8 @@
     &__card_text {
       font-size: clamp(16px, 7.47648vw, 64px);
     }
-    &__card_text_hidden {
-      opacity: 0;
-      animation: fadeIn 7s ease-in-out forwards;
-    }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+    &__card_text_card {
+      width: clamp(100px, 46.727999999999994vw, 400px);
     }
   }
 }
