@@ -108,22 +108,33 @@
   .about {
     margin-top: clamp(100px, 19.53125vw, 400px);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__content {
-      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       height: 90vh;
+      width: 90%;
     }
     &__text {
       @apply mt-16;
       flex-direction: column;
       text-align: center;
       &_paragraph {
-        @apply mt-4;
+        @apply mt-2;
         text-align: center;
-        width: clamp(220px, 42.96875vw, 880px);
+        width: clamp(340px, 66.40625vw, 1360px);
       }
     }
     &__flower_cards {
       display: flex;
+      margin: auto;
+      width: 40%;
+      justify-content: space-around;
       flex-direction: row;
       height: clamp(125px, 24.4140625vw, 500px);
     }
