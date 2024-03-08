@@ -28,6 +28,7 @@ export interface ProductData {
   fillWidthPercentage: number;
   margin: string;
   title: string;
+  subtitle?: string;
 }
 
 interface ProductCardProps {
@@ -37,6 +38,7 @@ interface ProductCardProps {
   imgType: string | "default";
   margin?: string;
   fillWidthPercentage: number;
+  text: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -46,13 +48,18 @@ const ProductCard: React.FC<ProductCardProps> = ({
   end,
   margin,
   fillWidthPercentage,
+  text,
 }) => {
   const imgClass = `${styles.img} ${styles[imgType]}`;
 
   return (
     <>
       <section className={`${styles.card} ${margin}`}>
-        <BigText bigTextType="secondary" text={indicatorsData[0].title} />
+        <BigText
+          bigTextType="secondary"
+          text={indicatorsData[0].title}
+          subtext={indicatorsData[0].subtitle}
+        />
         {indicatorsData.map((indicator: any, index: number) => (
           <Indicator key={index} {...indicator} />
         ))}
@@ -62,6 +69,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           indicatorType="dark-green"
           fillWidthPercentage={fillWidthPercentage}
           margin="mt-10"
+          text={text}
         />
         <img className={imgClass} src={src} alt="flour picture" />
       </section>

@@ -10,6 +10,7 @@ interface IndicatorPriceProps {
   indicatorLight: "light-green";
   fillWidthPercentage: number;
   end: number;
+  text: string;
 }
 
 export const IndicatorPrice: React.FC<IndicatorPriceProps> = ({
@@ -18,6 +19,7 @@ export const IndicatorPrice: React.FC<IndicatorPriceProps> = ({
   indicatorType,
   indicatorLight,
   fillWidthPercentage,
+  text,
   ...rest
 }) => {
   const [ref, inView] = useInView({
@@ -59,7 +61,7 @@ export const IndicatorPrice: React.FC<IndicatorPriceProps> = ({
     <div ref={ref} className={indicatorClass} {...rest}>
       <div className={indicatorLightClass} style={fillStyle}>
         <span className={styles.price_text} style={textStyle}>
-          <Counter duration={1.4} end={end} text="тг" />
+          <Counter duration={1.4} end={end} text={text} />
         </span>
       </div>
     </div>

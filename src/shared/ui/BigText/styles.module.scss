@@ -9,11 +9,11 @@
 }
 
 .bigtext--secondary {
+  // width: %;
   font-weight: 800;
   text-transform: uppercase;
   @apply text-white;
   font-size: clamp(30px, 3.1248vw, 120px);
-  width: 45%;
 }
 
 .bigtext--secondary--small {

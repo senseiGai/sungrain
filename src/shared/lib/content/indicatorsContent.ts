@@ -404,7 +404,8 @@ export const indicatorsContent = [
   {
     indicatorsData: [
       {
-        title: "Царская каша крупа гречневая",
+        title: "Царская каша",
+        subtitle: " крупа гречнева",
         mainText: "Сорт",
         secondText: "первый",
         indicatorType: "yellow",
@@ -413,7 +414,6 @@ export const indicatorsContent = [
         margin: "mt-12",
       },
       {
-        title: " ",
         mainText: "Эн.ценность (ккал)",
         secondText: "335",
         indicatorType: "darken-yellow",

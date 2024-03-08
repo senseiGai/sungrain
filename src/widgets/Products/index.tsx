@@ -23,10 +23,19 @@ function Products() {
   ];
   const imgTypes = ["default"];
   const prices = [11500, 14500, 2900, 700, 10000, 4000, 8000];
+  const text = [
+    "тг / 50кг",
+    "тг / 50кг",
+    "тг / 10кг",
+    "тг / 2кг",
+    "тг / 25кг",
+    "тг / 10кг",
+    "тг / 25кг",
+  ];
 
   const minPrice = Math.min(...prices);
   const maxPrice = Math.max(...prices);
-  const minFillPercentage = 30;
+  const minFillPercentage = 35;
   const maxFillPercentage = 100;
 
   const fillWidthPercentages = prices.map((price) => {
@@ -51,6 +60,7 @@ function Products() {
               imgType={imgTypes[index % imgTypes.length]}
               end={prices[index % prices.length]}
               fillWidthPercentage={fillWidthPercentages[index % prices.length]}
+              text={text[index % text.length]}
             />
           ))}
         </div>
