@@ -38,14 +38,15 @@
     display: flex;
     justify-content: center;
     &__content {
+      display: flex;
+      justify-content: center;
+      height: 90vh;
+      overflow-x: hidden;
       width: 90%;
-      height: 60vh;
-      @apply mb-52;
     }
     &__content_logo {
-      @apply mt-20;
-      width: clamp(250px, 39.0625vw, 1000px);
-      height: clamp(225px, 43.9453125vw, 900px);
+      @apply mt-16;
+      width: clamp(200px, 39.0625vw, 800px);
     }
   }
 }
