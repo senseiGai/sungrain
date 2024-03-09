@@ -58,7 +58,7 @@ export const indicatorsContent = [
       {
         title: " ",
         mainText: "ИДК",
-        secondText: "60 ЕД",
+        secondText: "70-75 ЕД",
         indicatorType: "darken-red",
         indicatorLight: "light-darken-red",
         fillWidthPercentage: 27,

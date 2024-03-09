@@ -3,8 +3,8 @@ import ProductCard from "@entities/ProductCard/index";
 import styles from "../Products/styles.module.scss";
 
 import Russian from "@assets/Products/22.webp";
-import Golden50 from "@assets/Products/golden50.webp";
-import GoldenCake from "@assets/Products/goldencake.webp";
+import Golden50 from "@assets/Products/IMG_0003_33.webp";
+import GoldenCake from "@assets/Products/ВС.webp";
 import Golden2 from "@assets/Products/Монтажная область 1.webp";
 import Golden25 from "@assets/Products/Монтажная область 2.webp";
 import Pizza from "@assets/Products/Монтажная область 3.webp";
@@ -35,7 +35,7 @@ function Products() {
 
   const minPrice = Math.min(...prices);
   const maxPrice = Math.max(...prices);
-  const minFillPercentage = 35;
+  const minFillPercentage = 40;
   const maxFillPercentage = 100;
 
   const fillWidthPercentages = prices.map((price) => {
