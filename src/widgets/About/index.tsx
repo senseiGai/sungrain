@@ -6,8 +6,8 @@ import { Separator } from "@shared/ui/Separator";
 import { Paragraph } from "@shared/ui/Paragraph";
 import { BigText } from "@shared/ui/BigText";
 
-import Hands from "@assets/Cards/handssss.webp";
-import Fire from "@assets/Cards/photo_03.webp";
+import Hands from "@assets/Cards/Group 56.webp";
+import Fire from "@assets/Cards/Group 55.webp";
 import Bread from "@assets/Cards/photo_01.webp";
 
 import styles from "../About/styles.module.scss";
