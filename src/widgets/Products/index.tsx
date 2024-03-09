@@ -21,7 +21,15 @@ function Products() {
     Pizza,
     King,
   ];
-  const imgTypes = ["default"];
+  const imgTypes = [
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "default",
+    "king",
+  ];
   const prices = [11500, 14500, 2900, 700, 10000, 4000, 8000];
   const text = [
     "тг / 50кг",

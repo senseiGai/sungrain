@@ -35,7 +35,7 @@ interface ProductCardProps {
   indicatorsData: any;
   end: number;
   src: string;
-  imgType: string | "default";
+  imgType: string | "default" | "king";
   margin?: string;
   fillWidthPercentage: number;
   text: string;
