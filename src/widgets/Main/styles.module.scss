@@ -50,3 +50,23 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__content {
+      width: 90%;
+      @apply mt-36;
+      display: flex;
+      justify-content: center;
+      height: 90vh;
+      overflow-x: hidden;
+    }
+    &__content_logo {
+      @apply mt-16;
+      width: clamp(180px, 46.875vw, 720px);
+    }
+  }
+}
