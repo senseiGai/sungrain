@@ -46,7 +46,7 @@ function AboutScreen() {
           </Fade>
         </div>
       </div>
-      <div className={`${styles.about__flower_cards} flex gap-16`}>
+      <div className={`${styles.about__flower_cards} flex`}>
         <Fade direction="up" triggerOnce className={styles.fade}>
           <AboutCard
             img={Hands}
@@ -60,8 +60,8 @@ function AboutScreen() {
             img={Fire}
             name="МУКА"
             cardType="Для пиццы"
-            textFirst="Для настоящих ценителей пиццы!"
-            textSecond="Наша специальная мука создана для идеального теста, которой не только легко раскатывается, но и придает вашей пицце неповторимый вкус и хрустящий край."
+            textFirst=""
+            textSecond="Для настоящих ценителей пиццы! Наша специальная мука создана для идеального теста, которой не только легко раскатывается, но и придает вашей пицце неповторимый вкус и хрустящий край."
           />
         </Fade>
         <Fade direction="up" delay={400} triggerOnce>
@@ -69,8 +69,8 @@ function AboutScreen() {
             img={Bread}
             name="МУКА"
             cardType="Для выпечки"
-            textFirst="Отличный хлеб начинается с отличной муки!"
-            textSecond="Наша мука для выпечки обеспечит ваши рецепты нежным вкусом и идеальной текстурой."
+            textFirst=""
+            textSecond="Отличный хлеб начинается с отличной муки! Наша мука для выпечки обеспечит ваши рецепты нежным вкусом и идеальной текстурой."
           />
         </Fade>
       </div>

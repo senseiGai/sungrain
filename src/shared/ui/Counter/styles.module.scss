@@ -35,3 +35,19 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .counter_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__counter {
+      @apply pt-3;
+      font-size: clamp(10px, 1.953125vw, 40px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 141.412%;
+      @apply text-white;
+    }
+  }
+}

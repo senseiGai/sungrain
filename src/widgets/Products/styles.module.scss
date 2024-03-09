@@ -33,6 +33,7 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .products {
     width: 100%;
+    @apply mt-96;
 
     &__content {
       width: 90%;
