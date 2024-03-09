@@ -53,3 +53,24 @@
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .contacts {
+    width: 100%;
+
+    &__content {
+      width: 90%;
+      @apply mt-32;
+    }
+    &__text {
+      @apply mt-12;
+      text-align: center;
+
+      &_paragraph {
+        @apply mt-8;
+        text-align: center;
+        width: clamp(250px, 79.43759999999999vw, 1000px);
+      }
+    }
+  }
+}
