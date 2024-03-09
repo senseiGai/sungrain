@@ -25,7 +25,7 @@ export const Footer = () => {
       </div>
       <img
         src={sparkLogo}
-        className="mt-8 mb-8"
+        className="mt-16 mb-8"
         onClick={() => window.open("https://sparkstudio.kz/home")}
         alt="spark-studio"
       />

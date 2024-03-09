@@ -41,10 +41,10 @@
     position: relative;
     background-position: center;
     background-size: cover;
-    transition: 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
-    }
+    // transition: 0.3s ease-in-out;
+    // &:hover {
+    //   transform: scale(1.1);
+    // }
   }
 
   &__flower_picture {
@@ -158,49 +158,51 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .about {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 90vh;
-      width: 90%;
-    }
-    &__text {
-      flex-direction: column;
-      text-align: center;
-      &_paragraph {
-        @apply mt-2;
-        text-align: center;
-        width: clamp(240px, 62.5vw, 960px);
-      }
-    }
-    &__flower_cards {
-      @apply gap-8;
-      display: flex;
-      margin: auto;
-      flex-direction: column;
-      height: clamp(125px, 24.4140625vw, 500px);
-    }
-    &__flower_card {
-      @apply mt-48;
-      width: clamp(150px, 29.296875vw, 600px);
-    }
-    &__card_text_section {
-      @apply p-5;
-    }
-    &__card_text {
-      font-size: clamp(14px, 2.734375vw, 56px);
-    }
-    &__card_text_hidden {
-      opacity: 1;
-    }
-  }
-}
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .about {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     &__content {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       height: 90vh;
+//       width: 90%;
+//     }
+//     &__text {
+//       flex-direction: column;
+//       text-align: center;
+//       &_paragraph {
+//         @apply mt-2;
+//         text-align: center;
+//         width: clamp(240px, 62.5vw, 960px);
+//       }
+//     }
+//     &__flower_cards {
+//       @apply gap-8;
+//       display: flex;
+//       margin: auto;
+//       flex-direction: column;
+//       // width: clamp(400px, 104.16666666666667vw, 1600px);
+//       height: clamp(125px, 24.4140625vw, 500px);
+//     }
+//     &__flower_card {
+//       @apply mt-32;
+//       // width: clamp(400px, 104.16666666666667vw, 1600px);
+//       width: 100%;
+//     }
+//     &__card_text_section {
+//       @apply p-5;
+//     }
+//     &__card_text {
+//       font-size: clamp(14px, 2.734375vw, 56px);
+//     }
+//     &__card_text_hidden {
+//       opacity: 1;
+//     }
+//   }
+// }

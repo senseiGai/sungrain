@@ -46,14 +46,14 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .bigtext--secondary {
-    font-size: clamp(18px, 4.6875vw, 72px);
-    width: 50%;
-  }
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .bigtext--secondary {
+//     font-size: clamp(18px, 4.6875vw, 72px);
+//     width: 50%;
+//   }
 
-  .bigtext--secondary--small {
-    @apply text-white;
-    font-size: clamp(14px, 3.6458333333333335vw, 56px);
-  }
-}
+//   .bigtext--secondary--small {
+//     @apply text-white;
+//     font-size: clamp(14px, 3.6458333333333335vw, 56px);
+//   }
+// }

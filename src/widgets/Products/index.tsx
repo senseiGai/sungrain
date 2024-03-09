@@ -3,7 +3,7 @@ import ProductCard from "@entities/ProductCard/index";
 import styles from "../Products/styles.module.scss";
 
 import Russian from "@assets/Products/22.webp";
-import Golden50 from "@assets/Products/IMG_0003_33.webp";
+import Golden50 from "@assets/Products/крупчатка.webp";
 import GoldenCake from "@assets/Products/ВС.webp";
 import Golden2 from "@assets/Products/Монтажная область 1.webp";
 import Golden25 from "@assets/Products/Монтажная область 2.webp";
@@ -48,8 +48,8 @@ function Products() {
   });
 
   return (
-    <section className={styles.products} id="products">
-      <div className={styles.products__content}>
+    <section className={styles.products}>
+      <div className={styles.products__content} id="products">
         <div className={styles.products__flour}>
           {indicatorsContent.map((product, index) => (
             <ProductCard

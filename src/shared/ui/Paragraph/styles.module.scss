@@ -49,20 +49,20 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .paragraph--default {
-    color: white;
-    font-size: clamp(10px, 2.6041666666666665vw, 40px);
-    font-weight: 400;
-    line-height: clamp(14.6px, 3.8020833333333335vw, 58.4px);
-  }
-  .paragraph--card {
-    width: clamp(125px, 24.4140625vw, 500px);
-    text-align: left;
-    color: white;
-    font-size: clamp(8px, 2.0833333333333335vw, 32px);
-    font-weight: 400;
-    line-height: clamp(12.5px, 3.2552083333333335vw, 50px);
-    word-wrap: break-word;
-  }
-}
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .paragraph--default {
+//     color: white;
+//     font-size: clamp(10px, 2.6041666666666665vw, 40px);
+//     font-weight: 400;
+//     line-height: clamp(14.6px, 3.8020833333333335vw, 58.4px);
+//   }
+//   .paragraph--card {
+//     width: clamp(125px, 24.4140625vw, 500px);
+//     text-align: left;
+//     color: white;
+//     font-size: clamp(8px, 2.0833333333333335vw, 32px);
+//     font-weight: 400;
+//     line-height: clamp(12.5px, 3.2552083333333335vw, 50px);
+//     word-wrap: break-word;
+//   }
+// }

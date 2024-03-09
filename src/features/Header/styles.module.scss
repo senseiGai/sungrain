@@ -83,28 +83,28 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header {
-    width: 100%;
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .header {
+//     width: 100%;
 
-    &__content {
-      width: 90%;
-      padding-bottom: clamp(12px, 3.125vw, 48px);
-    }
+//     &__content {
+//       width: 90%;
+//       padding-bottom: clamp(12px, 3.125vw, 48px);
+//     }
 
-    &__content_links {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      position: fixed;
-      z-index: 999;
-      left: 0%;
-      top: 0%;
-      right: 0%;
-      bottom: auto;
-      margin-right: auto;
-      margin-left: auto;
-      padding-top: clamp(14px, 3.6458333333333335vw, 56px);
-    }
-  }
-}
+//     &__content_links {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-around;
+//       position: fixed;
+//       z-index: 999;
+//       left: 0%;
+//       top: 0%;
+//       right: 0%;
+//       bottom: auto;
+//       margin-right: auto;
+//       margin-left: auto;
+//       padding-top: clamp(14px, 3.6458333333333335vw, 56px);
+//     }
+//   }
+// }

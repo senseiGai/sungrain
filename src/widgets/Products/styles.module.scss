@@ -44,16 +44,16 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .products {
-    width: 100%;
-    @apply mt-96;
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .products {
+//     width: 100%;
+//     @apply mt-96;
 
-    &__content {
-      width: 90%;
-    }
-    &__flour_card {
-      margin-top: clamp(150px, 29.296875vw, 600px);
-    }
-  }
-}
+//     &__content {
+//       width: 90%;
+//     }
+//     &__flour_card {
+//       margin-top: clamp(150px, 29.296875vw, 600px);
+//     }
+//   }
+// }

@@ -6,7 +6,7 @@ import { Separator } from "@shared/ui/Separator";
 import { Paragraph } from "@shared/ui/Paragraph";
 import { BigText } from "@shared/ui/BigText";
 
-import Hands from "@assets/Cards/photo_02.webp";
+import Hands from "@assets/Cards/handssss.webp";
 import Fire from "@assets/Cards/photo_03.webp";
 import Bread from "@assets/Cards/photo_01.webp";
 
