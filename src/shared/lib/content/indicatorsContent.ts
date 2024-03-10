@@ -405,7 +405,7 @@ export const indicatorsContent = [
     indicatorsData: [
       {
         title: "Царская каша",
-        subtitle: " крупа гречнева",
+        subtitle: " крупа гречневая",
         mainText: "Сорт",
         secondText: "первый",
         indicatorType: "yellow",

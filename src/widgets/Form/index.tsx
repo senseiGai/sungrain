@@ -9,7 +9,7 @@ import styles from "./styles.module.scss";
 import { toggleOnModal } from "../../redux/modalSlice";
 
 interface FormData {
-  name: string;
+  full_name: string;
   phone: string;
 }
 
@@ -30,7 +30,7 @@ function Form() {
           margin="mt-8"
           type="text"
           labelText="Введите ваше имя"
-          {...register("name", {
+          {...register("full_name", {
             required: "Это поле обязательно к заполнению",
             pattern: {
               value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
@@ -42,8 +42,8 @@ function Form() {
             },
           })}
         />
-        {errors.name && (
-          <span className={styles.error}>{errors.name.message}</span>
+        {errors.full_name && (
+          <span className={styles.error}>{errors.full_name.message}</span>
         )}
       </div>
       <div className={styles.form__input_phone}>

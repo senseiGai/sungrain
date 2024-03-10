@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
 export interface SendFormData {
-  name: string;
+  full_name: string;
   phone_number: string;
 }
 

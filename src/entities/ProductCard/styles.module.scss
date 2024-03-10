@@ -33,6 +33,13 @@
       left: -0.85px;
       @apply mt-8;
     }
+    .king {
+      position: static !important;
+      width: clamp(200px, 93.45599999999999vw, 800px);
+      height: clamp(200px, 93.45599999999999vw, 800px);
+      left: -0.85px;
+      @apply mt-8;
+    }
   }
 }
 
