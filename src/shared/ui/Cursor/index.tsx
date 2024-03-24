@@ -16,7 +16,7 @@ export const Cursor = () => {
       ref={cursorRef}
       style={{ position: "fixed", pointerEvents: "none", zIndex: 9999 }}
     >
-      <img src={sun} alt="pistol" style={{ width: "82px", height: "82px" }} />
+      <img src={sun} alt="sun" style={{ width: "82px", height: "82px" }} />
     </div>
   );
 };

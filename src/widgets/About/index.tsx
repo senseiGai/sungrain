@@ -6,9 +6,9 @@ import { Separator } from "@shared/ui/Separator";
 import { Paragraph } from "@shared/ui/Paragraph";
 import { BigText } from "@shared/ui/BigText";
 
-import Hands from "@assets/Cards/photo_03obrez.webp";
-import Fire from "@assets/Cards/photo_02obrez.webp";
-import Bread from "@assets/Cards/photo_01obrez.webp";
+import Hands from "@assets/Cards/photo_03.webp";
+import Fire from "@assets/Cards/photo_01.webp";
+import Bread from "@assets/Cards/photo_02.webp";
 
 import styles from "../About/styles.module.scss";
 import { AboutCard } from "@shared/ui/AboutCard";
