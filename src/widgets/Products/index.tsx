@@ -13,7 +13,7 @@ import { indicatorsContent } from "@shared/lib/content/indicatorsContent";
 
 function Products() {
   const productImages = [
-    Russian,
+    // Russian,
     Golden50,
     GoldenCake,
     Golden2,
