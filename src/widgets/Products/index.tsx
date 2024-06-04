@@ -22,7 +22,7 @@ function Products() {
     King,
   ];
   const imgTypes = [
-    "default",
+    // "default",
     "default",
     "default",
     "default",
@@ -30,9 +30,9 @@ function Products() {
     "default",
     "king",
   ];
-  const prices = [11500, 14500, 2900, 700, 10000, 4000, 8000];
+  const prices = [ 14500, 2900, 700, 10000, 4000, 8000];
   const text = [
-    "тг / 50кг",
+    // "тг / 50кг",
     "тг / 50кг",
     "тг / 10кг",
     "тг / 2кг",
