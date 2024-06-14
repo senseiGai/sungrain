@@ -10,7 +10,7 @@ import { toggleOnModal } from "../../redux/modalSlice";
 
 interface FormData {
   full_name: string;
-  phone: string;
+  phone_number: string;
 }
 
 function Form() {

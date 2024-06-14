@@ -22,10 +22,10 @@ export function useSendEmail() {
 
       emailjs
         .sendForm(
-          "service_zo7ktme",
-          "template_wls321b",
+          "service_wt1ct4g",
+          "template_fqfziii",
           event.target,
-          "4JH0nukWpbbxqO4Tw"
+          "LV9gYtaB2q_9ES1bV"
         )
         .then(
           (result) => {
